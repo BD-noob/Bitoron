@@ -1151,5 +1151,18 @@
         <file>images/deliveryscooter.png</file>
         <file>images/deliveryimageversion2.png</file>
         <file>images/pinnacle-package.png</file>
+        <file>logos/bitoron-high-resolution-color-logo.png</file>
+        <file>logos/bitoron-high-resolution-logo-black-on-transparent-background.png</file>
+        <file>logos/bitoron-high-resolution-logo-color-on-transparent-background.png</file>
+        <file>logos/bitoron-high-resolution-logo-white-on-black-background.png</file>
+        <file>logos/bitoron-high-resolution-logo-white-on-transparent-background.png</file>
+        <file>logos/bitoron-low-resolution-color-logo.png</file>
+        <file>logos/bitoron-low-resolution-logo-black-on-transparent-background.png</file>
+        <file>logos/bitoron-low-resolution-logo-color-on-transparent-background.png</file>
+        <file>logos/bitoron-low-resolution-logo-white-on-black-background.png</file>
+        <file>logos/bitoron-low-resolution-logo-white-on-transparent-background.png</file>
+        <file>logos/bitoron-website-favicon-black.png</file>
+        <file>logos/bitoron-website-favicon-color.png</file>
+        <file>logos/bitoron-website-favicon-white.png</file>
     </qresource>
 </RCC>

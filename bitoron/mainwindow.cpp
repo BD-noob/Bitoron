@@ -16,13 +16,27 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_Btn_signin_clicked()
 {
-    ui->container->setCurrentIndex(1);  //stackedWidget is renamed as container
+    ui->container->setCurrentIndex(2);  //stackedWidget is renamed as container
 
 }
 
+void MainWindow::on_Btn_signup_clicked()
+{
+    ui->container->setCurrentIndex(2);  //stackedWidget is renamed as container
+}
 
+void MainWindow::on_Btn_sendParcel_clicked()
+{
+    ui->container->setCurrentIndex(2);  //stackedWidget is renamed as container
+}
 
+void MainWindow::on_Btn_deliveryMan_clicked()
+{
+    ui->container->setCurrentIndex(1);  //stackedWidget is renamed as container
+}
 
-
-
+void MainWindow::on_Btn_admin_clicked()
+{
+    ui->container->setCurrentIndex(3);  //stackedWidget is renamed as container
+}
 
