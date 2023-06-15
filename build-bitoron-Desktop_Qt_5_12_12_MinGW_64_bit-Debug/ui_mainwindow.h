@@ -10,6 +10,7 @@
 #define UI_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QFrame>
@@ -39,7 +40,6 @@ public:
     QStackedWidget *container;
     QWidget *homePg;
     QWidget *upperSection;
-    QLineEdit *lineEdit_Searchbar;
     QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QPushButton *Btn_signin;
@@ -48,28 +48,13 @@ public:
     QWidget *middleSection;
     QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout_2;
-    QWidget *widget_3;
-    QFrame *frame_2;
-    QVBoxLayout *verticalLayout;
-    QLabel *label;
-    QVBoxLayout *verticalLayout_4;
-    QLabel *addStore;
-    QPushButton *pushButton;
-    QWidget *widget_4;
-    QFrame *frame_3;
-    QVBoxLayout *verticalLayout_5;
-    QLabel *label_2;
-    QVBoxLayout *verticalLayout_2;
-    QLabel *sendParcel;
-    QPushButton *pushButton_2;
-    QWidget *widget_5;
-    QFrame *frame_4;
-    QVBoxLayout *verticalLayout_6;
-    QLabel *label_3;
-    QVBoxLayout *verticalLayout_3;
-    QLabel *joinDelivery;
-    QPushButton *pushButton_3;
+    QPushButton *pushButton_11;
+    QPushButton *pushButton_26;
     QWidget *footer;
+    QPushButton *pushButton_27;
+    QLabel *label_31;
+    QLabel *label_33;
+    QLabel *label_43;
     QWidget *deliverySignInUp;
     QWidget *signinSection;
     QLineEdit *userLineEdit;
@@ -228,6 +213,26 @@ public:
     QLabel *label_50;
     QPushButton *pushButton_25;
     QWidget *page;
+    QFrame *frame_3;
+    QVBoxLayout *verticalLayout_5;
+    QLabel *label_2;
+    QVBoxLayout *verticalLayout_2;
+    QLabel *sendParcel;
+    QPushButton *pushButton_2;
+    QFrame *frame_2;
+    QVBoxLayout *verticalLayout;
+    QLabel *label;
+    QVBoxLayout *verticalLayout_4;
+    QLabel *addStore;
+    QPushButton *pushButton;
+    QFrame *frame_4;
+    QVBoxLayout *verticalLayout_6;
+    QLabel *label_3;
+    QVBoxLayout *verticalLayout_3;
+    QLabel *joinDelivery;
+    QPushButton *pushButton_3;
+    QWidget *widget_18;
+    QPushButton *pushButton_12;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -259,39 +264,32 @@ public:
         homePg->setMinimumSize(QSize(0, 0));
         upperSection = new QWidget(homePg);
         upperSection->setObjectName(QString::fromUtf8("upperSection"));
-        upperSection->setGeometry(QRect(0, 0, 1200, 1200));
+        upperSection->setGeometry(QRect(-1, 0, 1201, 341));
         upperSection->setMinimumSize(QSize(0, 0));
         upperSection->setStyleSheet(QString::fromUtf8(""));
-        lineEdit_Searchbar = new QLineEdit(upperSection);
-        lineEdit_Searchbar->setObjectName(QString::fromUtf8("lineEdit_Searchbar"));
-        lineEdit_Searchbar->setGeometry(QRect(250, 110, 461, 41));
-        lineEdit_Searchbar->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
-"border-top-left-radius: 12px;\n"
-"border-top-right-radius: 3px;\n"
-"border-bottom-right-radius: 12px;\n"
-"border-bottom-left-radius: 3px;\n"
-"padding-left:8px;\n"
-"font: 11pt \"Lucida Sans\";\n"
-"color: rgb(206, 36, 14);"));
         layoutWidget = new QWidget(upperSection);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(760, 20, 201, 61));
+        layoutWidget->setGeometry(QRect(780, 10, 201, 52));
         horizontalLayout = new QHBoxLayout(layoutWidget);
+        horizontalLayout->setSpacing(0);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
         Btn_signin = new QPushButton(layoutWidget);
         Btn_signin->setObjectName(QString::fromUtf8("Btn_signin"));
+        Btn_signin->setMinimumSize(QSize(0, 40));
         Btn_signin->setCursor(QCursor(Qt::PointingHandCursor));
-        Btn_signin->setStyleSheet(QString::fromUtf8("color: rgb(206, 36, 14);\n"
-"font: 16pt \"Lucida Sans\";\n"
+        Btn_signin->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "background-color: none;\n"
-"border: none;\n"
-"border-color: none;"));
+"font: 16pt \"Lucida Sans\";\n"
+"color: rgb(254, 247, 239);\n"
+"background-color: rgba(206, 36, 14, 0.6);\n"
+""));
 
         horizontalLayout->addWidget(Btn_signin);
 
         Btn_signup = new QPushButton(layoutWidget);
         Btn_signup->setObjectName(QString::fromUtf8("Btn_signup"));
+        Btn_signup->setMinimumSize(QSize(0, 40));
         QFont font;
         font.setFamily(QString::fromUtf8("Lucida Sans"));
         font.setPointSize(16);
@@ -302,192 +300,148 @@ public:
         Btn_signup->setFont(font);
         Btn_signup->setCursor(QCursor(Qt::PointingHandCursor));
         Btn_signup->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
-"font: 16pt \"Lucida Sans\";\n"
-"color: rgb(206, 36, 14);\n"
 "background-color: none;\n"
-"border: none;\n"
-"border-color: none;"));
+"font: 16pt \"Lucida Sans\";\n"
+"color: rgb(254, 247, 239);\n"
+"background-color: rgba(206, 36, 14, 0.6);\n"
+""));
 
         horizontalLayout->addWidget(Btn_signup);
 
         widget_9 = new QWidget(upperSection);
         widget_9->setObjectName(QString::fromUtf8("widget_9"));
-        widget_9->setGeometry(QRect(0, 0, 1000, 600));
+        widget_9->setGeometry(QRect(0, 0, 1001, 571));
         widget_9->setStyleSheet(QString::fromUtf8("border-image: url(:/res/images/bgnavbar1.jpg);"));
         widget_9->raise();
-        lineEdit_Searchbar->raise();
         layoutWidget->raise();
         middleSection = new QWidget(homePg);
         middleSection->setObjectName(QString::fromUtf8("middleSection"));
-        middleSection->setGeometry(QRect(0, 200, 1000, 400));
-        middleSection->setStyleSheet(QString::fromUtf8("background-color: none;\n"
-"border-bottom-left-radius: 50px;\n"
-"border-bottom-right-radius: 100px;\n"
-"border-top-left-radius: 100px;\n"
-"border-top-right-radius: 20px;"));
+        middleSection->setGeometry(QRect(0, 229, 1000, 371));
+        QFont font1;
+        font1.setKerning(true);
+        middleSection->setFont(font1);
+        middleSection->setStyleSheet(QString::fromUtf8("background-color: none;"));
         layoutWidget1 = new QWidget(middleSection);
         layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
-        layoutWidget1->setGeometry(QRect(40, 30, 921, 281));
+        layoutWidget1->setGeometry(QRect(20, 20, 961, 321));
         horizontalLayout_2 = new QHBoxLayout(layoutWidget1);
         horizontalLayout_2->setSpacing(40);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         horizontalLayout_2->setSizeConstraint(QLayout::SetDefaultConstraint);
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        widget_3 = new QWidget(layoutWidget1);
-        widget_3->setObjectName(QString::fromUtf8("widget_3"));
-        widget_3->setStyleSheet(QString::fromUtf8("background-color: rgb(206, 36, 14);\n"
-"background-color: rgb(255, 251, 238);\n"
-"color: white;\n"
-"border-bottom-left-radius: 50px;\n"
-"border-bottom-right-radius: 100px;\n"
-"border-top-left-radius: 100px;\n"
-"border-top-right-radius: 20px;\n"
-""));
-        frame_2 = new QFrame(widget_3);
-        frame_2->setObjectName(QString::fromUtf8("frame_2"));
-        frame_2->setGeometry(QRect(40, 50, 201, 201));
-        frame_2->setCursor(QCursor(Qt::PointingHandCursor));
-        frame_2->setFrameShape(QFrame::StyledPanel);
-        frame_2->setFrameShadow(QFrame::Raised);
-        verticalLayout = new QVBoxLayout(frame_2);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        label = new QLabel(frame_2);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/white/archive.svg);\n"
-"image: url(:/res/icons/black/archive.svg);"));
+        pushButton_11 = new QPushButton(layoutWidget1);
+        pushButton_11->setObjectName(QString::fromUtf8("pushButton_11"));
+        pushButton_11->setMinimumSize(QSize(0, 319));
+        QFont font2;
+        font2.setFamily(QString::fromUtf8("MV Boli"));
+        font2.setPointSize(14);
+        font2.setBold(false);
+        font2.setItalic(false);
+        font2.setUnderline(false);
+        font2.setWeight(50);
+        font2.setStrikeOut(false);
+        font2.setKerning(true);
+        pushButton_11->setFont(font2);
+        pushButton_11->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_11->setContextMenuPolicy(Qt::DefaultContextMenu);
+        pushButton_11->setLayoutDirection(Qt::LeftToRight);
+        pushButton_11->setAutoFillBackground(false);
+        pushButton_11->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"	font: 14pt \"MV Boli\";\n"
+"	color: rgb(0, 0, 0);\n"
+"	background-color: qlineargradient(spread:pad, x1:1, y1:0.555, x2:1, y2:1, stop:0.221591 rgba(254, 247, 239, 255), stop:1 rgba(190, 22, 0, 255));\n"
+"border: none;\n"
+"}\n"
+"\n"
+"QPushButton::Hover{\n"
+"background-color: rgb(254, 247, 239);\n"
+"}"));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/res/icons/dark Orange/send.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_11->setIcon(icon);
+        pushButton_11->setIconSize(QSize(100, 100));
+        pushButton_11->setCheckable(false);
+        pushButton_11->setFlat(false);
 
-        verticalLayout->addWidget(label);
+        horizontalLayout_2->addWidget(pushButton_11);
 
-        verticalLayout_4 = new QVBoxLayout();
-        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
-        addStore = new QLabel(frame_2);
-        addStore->setObjectName(QString::fromUtf8("addStore"));
-        addStore->setLayoutDirection(Qt::LeftToRight);
-        addStore->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
-"color: rgb(129, 140, 248);"));
-        addStore->setWordWrap(true);
+        pushButton_26 = new QPushButton(layoutWidget1);
+        pushButton_26->setObjectName(QString::fromUtf8("pushButton_26"));
+        pushButton_26->setMinimumSize(QSize(0, 319));
+        pushButton_26->setFont(font2);
+        pushButton_26->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_26->setContextMenuPolicy(Qt::DefaultContextMenu);
+        pushButton_26->setLayoutDirection(Qt::LeftToRight);
+        pushButton_26->setAutoFillBackground(false);
+        pushButton_26->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"	font: 14pt \"MV Boli\";\n"
+"	color: rgb(0, 0, 0);\n"
+"	background-color: qlineargradient(spread:pad, x1:1, y1:0.555, x2:1, y2:1, stop:0.221591 rgba(254, 247, 239, 255), stop:1 rgba(190, 22, 0, 255));\n"
+"border: none;\n"
+"}\n"
+"\n"
+"QPushButton::Hover{\n"
+"background-color: rgb(254, 247, 239);\n"
+"}"));
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8(":/res/icons/dark Orange/truck.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_26->setIcon(icon1);
+        pushButton_26->setIconSize(QSize(100, 100));
+        pushButton_26->setCheckable(false);
+        pushButton_26->setFlat(false);
 
-        verticalLayout_4->addWidget(addStore);
-
-        pushButton = new QPushButton(frame_2);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setMinimumSize(QSize(0, 0));
-        QFont font1;
-        font1.setFamily(QString::fromUtf8("Lucida Sans"));
-        font1.setPointSize(22);
-        font1.setBold(false);
-        font1.setItalic(false);
-        font1.setWeight(50);
-        pushButton->setFont(font1);
-        pushButton->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/arrow-right-circle.svg);\n"
-"font: 22pt \"Lucida Sans\";"));
-
-        verticalLayout_4->addWidget(pushButton);
-
-
-        verticalLayout->addLayout(verticalLayout_4);
-
-
-        horizontalLayout_2->addWidget(widget_3);
-
-        widget_4 = new QWidget(layoutWidget1);
-        widget_4->setObjectName(QString::fromUtf8("widget_4"));
-        widget_4->setStyleSheet(QString::fromUtf8("background-color: rgb(206, 36, 14);\n"
-"color: white;\n"
-"border-bottom-left-radius: 50px;\n"
-"border-bottom-right-radius: 100px;\n"
-"border-top-left-radius: 100px;\n"
-"border-top-right-radius: 20px;\n"
-""));
-        frame_3 = new QFrame(widget_4);
-        frame_3->setObjectName(QString::fromUtf8("frame_3"));
-        frame_3->setGeometry(QRect(50, 50, 179, 201));
-        frame_3->setCursor(QCursor(Qt::ArrowCursor));
-        frame_3->setFrameShape(QFrame::StyledPanel);
-        frame_3->setFrameShadow(QFrame::Raised);
-        verticalLayout_5 = new QVBoxLayout(frame_3);
-        verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
-        label_2 = new QLabel(frame_3);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/white/send.svg);\n"
-"font: 12pt \"MS Shell Dlg 2\";"));
-
-        verticalLayout_5->addWidget(label_2);
-
-        verticalLayout_2 = new QVBoxLayout();
-        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        sendParcel = new QLabel(frame_3);
-        sendParcel->setObjectName(QString::fromUtf8("sendParcel"));
-        sendParcel->setWordWrap(true);
-
-        verticalLayout_2->addWidget(sendParcel);
-
-        pushButton_2 = new QPushButton(frame_3);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_2->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/arrow-right-circle.svg);\n"
-"font: 22pt \"MS Shell Dlg 2\";"));
-
-        verticalLayout_2->addWidget(pushButton_2);
-
-
-        verticalLayout_5->addLayout(verticalLayout_2);
-
-
-        horizontalLayout_2->addWidget(widget_4);
-
-        widget_5 = new QWidget(layoutWidget1);
-        widget_5->setObjectName(QString::fromUtf8("widget_5"));
-        widget_5->setStyleSheet(QString::fromUtf8("background-color: rgb(206, 36, 14);\n"
-"color: white;\n"
-"border-bottom-left-radius: 50px;\n"
-"border-bottom-right-radius: 100px;\n"
-"border-top-left-radius: 100px;\n"
-"border-top-right-radius: 20px;\n"
-""));
-        frame_4 = new QFrame(widget_5);
-        frame_4->setObjectName(QString::fromUtf8("frame_4"));
-        frame_4->setEnabled(true);
-        frame_4->setGeometry(QRect(30, 40, 221, 211));
-        frame_4->setCursor(QCursor(Qt::ArrowCursor));
-        frame_4->setFrameShape(QFrame::StyledPanel);
-        frame_4->setFrameShadow(QFrame::Raised);
-        verticalLayout_6 = new QVBoxLayout(frame_4);
-        verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
-        label_3 = new QLabel(frame_4);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/white/truck.svg);"));
-
-        verticalLayout_6->addWidget(label_3);
-
-        verticalLayout_3 = new QVBoxLayout();
-        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
-        joinDelivery = new QLabel(frame_4);
-        joinDelivery->setObjectName(QString::fromUtf8("joinDelivery"));
-        joinDelivery->setWordWrap(true);
-
-        verticalLayout_3->addWidget(joinDelivery);
-
-        pushButton_3 = new QPushButton(frame_4);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_3->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/arrow-right-circle.svg);\n"
-"font: 22pt \"MS Shell Dlg 2\";"));
-
-        verticalLayout_3->addWidget(pushButton_3);
-
-
-        verticalLayout_6->addLayout(verticalLayout_3);
-
-
-        horizontalLayout_2->addWidget(widget_5);
+        horizontalLayout_2->addWidget(pushButton_26);
 
         footer = new QWidget(homePg);
         footer->setObjectName(QString::fromUtf8("footer"));
-        footer->setGeometry(QRect(-1, 599, 1001, 101));
-        footer->setStyleSheet(QString::fromUtf8("background-color: rgb(206, 36, 14);"));
+        footer->setGeometry(QRect(0, 339, 1001, 361));
+        footer->setStyleSheet(QString::fromUtf8("background-color: rgb(206, 36, 14);\n"
+"background-color: rgb(190, 22, 0);"));
+        pushButton_27 = new QPushButton(footer);
+        pushButton_27->setObjectName(QString::fromUtf8("pushButton_27"));
+        pushButton_27->setGeometry(QRect(850, 290, 131, 31));
+        pushButton_27->setMinimumSize(QSize(0, 10));
+        pushButton_27->setMaximumSize(QSize(16777215, 50));
+        pushButton_27->setFont(font2);
+        pushButton_27->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_27->setContextMenuPolicy(Qt::DefaultContextMenu);
+        pushButton_27->setLayoutDirection(Qt::LeftToRight);
+        pushButton_27->setAutoFillBackground(false);
+        pushButton_27->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"	font: 14pt \"MV Boli\";\n"
+"	color: rgb(254, 247, 239);\n"
+"	background-color:rgba(254, 247, 239,0.1);\n"
+"	border: none;\n"
+"}\n"
+"\n"
+""));
+        pushButton_27->setIconSize(QSize(100, 100));
+        pushButton_27->setCheckable(false);
+        pushButton_27->setFlat(false);
+        label_31 = new QLabel(footer);
+        label_31->setObjectName(QString::fromUtf8("label_31"));
+        label_31->setGeometry(QRect(490, 330, 31, 21));
+        QFont font3;
+        font3.setPointSize(5);
+        label_31->setFont(font3);
+        label_31->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/facebook.svg);\n"
+"image: url(:/res/icons/white/facebook.svg);"));
+        label_33 = new QLabel(footer);
+        label_33->setObjectName(QString::fromUtf8("label_33"));
+        label_33->setGeometry(QRect(520, 330, 21, 21));
+        label_33->setFont(font3);
+        label_33->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/twitter.svg);\n"
+"image: url(:/res/icons/white/twitter.svg);"));
+        label_43 = new QLabel(footer);
+        label_43->setObjectName(QString::fromUtf8("label_43"));
+        label_43->setGeometry(QRect(470, 330, 21, 21));
+        label_43->setFont(font3);
+        label_43->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/github.svg);\n"
+"image: url(:/res/icons/white/github.svg);"));
         container->addWidget(homePg);
+        footer->raise();
+        upperSection->raise();
+        middleSection->raise();
         deliverySignInUp = new QWidget();
         deliverySignInUp->setObjectName(QString::fromUtf8("deliverySignInUp"));
         signinSection = new QWidget(deliverySignInUp);
@@ -499,10 +453,10 @@ public:
         userLineEdit = new QLineEdit(signinSection);
         userLineEdit->setObjectName(QString::fromUtf8("userLineEdit"));
         userLineEdit->setGeometry(QRect(50, 150, 231, 31));
-        QFont font2;
-        font2.setFamily(QString::fromUtf8("Lucida Sans"));
-        font2.setPointSize(10);
-        userLineEdit->setFont(font2);
+        QFont font4;
+        font4.setFamily(QString::fromUtf8("Lucida Sans"));
+        font4.setPointSize(10);
+        userLineEdit->setFont(font4);
         userLineEdit->setFocusPolicy(Qt::StrongFocus);
         userLineEdit->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
@@ -512,14 +466,14 @@ public:
         passLineEdit = new QLineEdit(signinSection);
         passLineEdit->setObjectName(QString::fromUtf8("passLineEdit"));
         passLineEdit->setGeometry(QRect(50, 200, 231, 31));
-        QFont font3;
-        font3.setFamily(QString::fromUtf8("Lucida Sans"));
-        font3.setPointSize(10);
-        font3.setBold(false);
-        font3.setWeight(50);
-        font3.setStrikeOut(false);
-        font3.setKerning(true);
-        passLineEdit->setFont(font3);
+        QFont font5;
+        font5.setFamily(QString::fromUtf8("Lucida Sans"));
+        font5.setPointSize(10);
+        font5.setBold(false);
+        font5.setWeight(50);
+        font5.setStrikeOut(false);
+        font5.setKerning(true);
+        passLineEdit->setFont(font5);
         passLineEdit->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -574,9 +528,9 @@ public:
         firstnameLineEdit = new QLineEdit(signupSection);
         firstnameLineEdit->setObjectName(QString::fromUtf8("firstnameLineEdit"));
         firstnameLineEdit->setGeometry(QRect(50, 70, 231, 31));
-        QFont font4;
-        font4.setPointSize(10);
-        firstnameLineEdit->setFont(font4);
+        QFont font6;
+        font6.setPointSize(10);
+        firstnameLineEdit->setFont(font6);
         firstnameLineEdit->setCursor(QCursor(Qt::IBeamCursor));
         firstnameLineEdit->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
@@ -584,7 +538,7 @@ public:
         lastnameLineEdit = new QLineEdit(signupSection);
         lastnameLineEdit->setObjectName(QString::fromUtf8("lastnameLineEdit"));
         lastnameLineEdit->setGeometry(QRect(50, 120, 231, 31));
-        lastnameLineEdit->setFont(font4);
+        lastnameLineEdit->setFont(font6);
         lastnameLineEdit->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -592,7 +546,7 @@ public:
         userLineEdit_2 = new QLineEdit(signupSection);
         userLineEdit_2->setObjectName(QString::fromUtf8("userLineEdit_2"));
         userLineEdit_2->setGeometry(QRect(50, 170, 231, 31));
-        userLineEdit_2->setFont(font4);
+        userLineEdit_2->setFont(font6);
         userLineEdit_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -600,7 +554,7 @@ public:
         disLineEdit_3 = new QLineEdit(signupSection);
         disLineEdit_3->setObjectName(QString::fromUtf8("disLineEdit_3"));
         disLineEdit_3->setGeometry(QRect(50, 220, 231, 31));
-        disLineEdit_3->setFont(font4);
+        disLineEdit_3->setFont(font6);
         disLineEdit_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -608,7 +562,7 @@ public:
         mobileLineEdit_4 = new QLineEdit(signupSection);
         mobileLineEdit_4->setObjectName(QString::fromUtf8("mobileLineEdit_4"));
         mobileLineEdit_4->setGeometry(QRect(50, 270, 231, 31));
-        mobileLineEdit_4->setFont(font4);
+        mobileLineEdit_4->setFont(font6);
         mobileLineEdit_4->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -616,7 +570,7 @@ public:
         passLineEdit_5 = new QLineEdit(signupSection);
         passLineEdit_5->setObjectName(QString::fromUtf8("passLineEdit_5"));
         passLineEdit_5->setGeometry(QRect(50, 320, 231, 31));
-        passLineEdit_5->setFont(font4);
+        passLineEdit_5->setFont(font6);
         passLineEdit_5->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -628,18 +582,18 @@ public:
         femaleBtn = new QRadioButton(signupSection);
         femaleBtn->setObjectName(QString::fromUtf8("femaleBtn"));
         femaleBtn->setGeometry(QRect(200, 360, 81, 31));
-        QFont font5;
-        font5.setFamily(QString::fromUtf8("Lucida Sans"));
-        font5.setPointSize(10);
-        font5.setBold(false);
-        font5.setItalic(false);
-        font5.setWeight(50);
-        femaleBtn->setFont(font5);
+        QFont font7;
+        font7.setFamily(QString::fromUtf8("Lucida Sans"));
+        font7.setPointSize(10);
+        font7.setBold(false);
+        font7.setItalic(false);
+        font7.setWeight(50);
+        femaleBtn->setFont(font7);
         femaleBtn->setStyleSheet(QString::fromUtf8("font: 10pt \"Lucida Sans\";"));
         gender = new QLabel(signupSection);
         gender->setObjectName(QString::fromUtf8("gender"));
         gender->setGeometry(QRect(50, 360, 71, 31));
-        gender->setFont(font5);
+        gender->setFont(font7);
         gender->setStyleSheet(QString::fromUtf8("font: 10pt \"Lucida Sans\";\n"
 "color:white;"));
         signupBtn = new QPushButton(signupSection);
@@ -684,13 +638,13 @@ public:
         palette.setBrush(QPalette::Disabled, QPalette::PlaceholderText, brush4);
 #endif
         signupBtn->setPalette(palette);
-        QFont font6;
-        font6.setFamily(QString::fromUtf8("Lucida Sans"));
-        font6.setPointSize(14);
-        font6.setBold(false);
-        font6.setItalic(false);
-        font6.setWeight(50);
-        signupBtn->setFont(font6);
+        QFont font8;
+        font8.setFamily(QString::fromUtf8("Lucida Sans"));
+        font8.setPointSize(14);
+        font8.setBold(false);
+        font8.setItalic(false);
+        font8.setWeight(50);
+        signupBtn->setFont(font8);
         signupBtn->setCursor(QCursor(Qt::PointingHandCursor));
         signupBtn->setStyleSheet(QString::fromUtf8("color:rgb(255, 255, 255);\n"
 "font: 14pt \"Lucida Sans\";\n"
@@ -702,7 +656,7 @@ public:
         signupLabel = new QLabel(signupSection);
         signupLabel->setObjectName(QString::fromUtf8("signupLabel"));
         signupLabel->setGeometry(QRect(70, 10, 61, 31));
-        signupLabel->setFont(font6);
+        signupLabel->setFont(font8);
         signupLabel->setStyleSheet(QString::fromUtf8("font: 14pt \"Lucida Sans\";"));
         container->addWidget(deliverySignInUp);
         widget_8->raise();
@@ -719,7 +673,7 @@ public:
         userLineEdit_3 = new QLineEdit(signinSection_2);
         userLineEdit_3->setObjectName(QString::fromUtf8("userLineEdit_3"));
         userLineEdit_3->setGeometry(QRect(50, 150, 231, 31));
-        userLineEdit_3->setFont(font2);
+        userLineEdit_3->setFont(font4);
         userLineEdit_3->setFocusPolicy(Qt::StrongFocus);
         userLineEdit_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
@@ -729,7 +683,7 @@ public:
         passLineEdit_2 = new QLineEdit(signinSection_2);
         passLineEdit_2->setObjectName(QString::fromUtf8("passLineEdit_2"));
         passLineEdit_2->setGeometry(QRect(50, 200, 231, 31));
-        passLineEdit_2->setFont(font3);
+        passLineEdit_2->setFont(font5);
         passLineEdit_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -784,7 +738,7 @@ public:
         firstnameLineEdit_2 = new QLineEdit(signupSection_2);
         firstnameLineEdit_2->setObjectName(QString::fromUtf8("firstnameLineEdit_2"));
         firstnameLineEdit_2->setGeometry(QRect(50, 70, 231, 31));
-        firstnameLineEdit_2->setFont(font4);
+        firstnameLineEdit_2->setFont(font6);
         firstnameLineEdit_2->setCursor(QCursor(Qt::IBeamCursor));
         firstnameLineEdit_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
@@ -792,7 +746,7 @@ public:
         lastnameLineEdit_2 = new QLineEdit(signupSection_2);
         lastnameLineEdit_2->setObjectName(QString::fromUtf8("lastnameLineEdit_2"));
         lastnameLineEdit_2->setGeometry(QRect(50, 120, 231, 31));
-        lastnameLineEdit_2->setFont(font4);
+        lastnameLineEdit_2->setFont(font6);
         lastnameLineEdit_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -800,7 +754,7 @@ public:
         userLineEdit_4 = new QLineEdit(signupSection_2);
         userLineEdit_4->setObjectName(QString::fromUtf8("userLineEdit_4"));
         userLineEdit_4->setGeometry(QRect(50, 170, 231, 31));
-        userLineEdit_4->setFont(font4);
+        userLineEdit_4->setFont(font6);
         userLineEdit_4->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -808,7 +762,7 @@ public:
         disLineEdit_4 = new QLineEdit(signupSection_2);
         disLineEdit_4->setObjectName(QString::fromUtf8("disLineEdit_4"));
         disLineEdit_4->setGeometry(QRect(50, 220, 231, 31));
-        disLineEdit_4->setFont(font4);
+        disLineEdit_4->setFont(font6);
         disLineEdit_4->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -816,7 +770,7 @@ public:
         mobileLineEdit_5 = new QLineEdit(signupSection_2);
         mobileLineEdit_5->setObjectName(QString::fromUtf8("mobileLineEdit_5"));
         mobileLineEdit_5->setGeometry(QRect(50, 270, 231, 31));
-        mobileLineEdit_5->setFont(font4);
+        mobileLineEdit_5->setFont(font6);
         mobileLineEdit_5->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -824,7 +778,7 @@ public:
         passLineEdit_6 = new QLineEdit(signupSection_2);
         passLineEdit_6->setObjectName(QString::fromUtf8("passLineEdit_6"));
         passLineEdit_6->setGeometry(QRect(50, 320, 231, 31));
-        passLineEdit_6->setFont(font4);
+        passLineEdit_6->setFont(font6);
         passLineEdit_6->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -836,12 +790,12 @@ public:
         femaleBtn_2 = new QRadioButton(signupSection_2);
         femaleBtn_2->setObjectName(QString::fromUtf8("femaleBtn_2"));
         femaleBtn_2->setGeometry(QRect(200, 360, 81, 31));
-        femaleBtn_2->setFont(font5);
+        femaleBtn_2->setFont(font7);
         femaleBtn_2->setStyleSheet(QString::fromUtf8("font: 10pt \"Lucida Sans\";"));
         gender_2 = new QLabel(signupSection_2);
         gender_2->setObjectName(QString::fromUtf8("gender_2"));
         gender_2->setGeometry(QRect(50, 360, 71, 31));
-        gender_2->setFont(font5);
+        gender_2->setFont(font7);
         gender_2->setStyleSheet(QString::fromUtf8("font: 10pt \"Lucida Sans\";\n"
 "color:white;"));
         signupBtn_2 = new QPushButton(signupSection_2);
@@ -882,7 +836,7 @@ public:
         palette1.setBrush(QPalette::Disabled, QPalette::PlaceholderText, brush7);
 #endif
         signupBtn_2->setPalette(palette1);
-        signupBtn_2->setFont(font6);
+        signupBtn_2->setFont(font8);
         signupBtn_2->setCursor(QCursor(Qt::PointingHandCursor));
         signupBtn_2->setStyleSheet(QString::fromUtf8("color:rgb(255, 255, 255);\n"
 "font: 14pt \"Lucida Sans\";\n"
@@ -894,7 +848,7 @@ public:
         signupLabel_2 = new QLabel(signupSection_2);
         signupLabel_2->setObjectName(QString::fromUtf8("signupLabel_2"));
         signupLabel_2->setGeometry(QRect(70, 10, 61, 31));
-        signupLabel_2->setFont(font6);
+        signupLabel_2->setFont(font8);
         signupLabel_2->setStyleSheet(QString::fromUtf8("font: 14pt \"Lucida Sans\";"));
         container->addWidget(userSignInUp);
         widget_12->raise();
@@ -911,7 +865,7 @@ public:
         userLineEdit_5 = new QLineEdit(signinSection_3);
         userLineEdit_5->setObjectName(QString::fromUtf8("userLineEdit_5"));
         userLineEdit_5->setGeometry(QRect(50, 150, 231, 31));
-        userLineEdit_5->setFont(font2);
+        userLineEdit_5->setFont(font4);
         userLineEdit_5->setFocusPolicy(Qt::StrongFocus);
         userLineEdit_5->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
@@ -921,7 +875,7 @@ public:
         passLineEdit_3 = new QLineEdit(signinSection_3);
         passLineEdit_3->setObjectName(QString::fromUtf8("passLineEdit_3"));
         passLineEdit_3->setGeometry(QRect(50, 200, 231, 31));
-        passLineEdit_3->setFont(font3);
+        passLineEdit_3->setFont(font5);
         passLineEdit_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -972,7 +926,7 @@ public:
         firstnameLineEdit_3 = new QLineEdit(signupSection_3);
         firstnameLineEdit_3->setObjectName(QString::fromUtf8("firstnameLineEdit_3"));
         firstnameLineEdit_3->setGeometry(QRect(50, 70, 231, 31));
-        firstnameLineEdit_3->setFont(font4);
+        firstnameLineEdit_3->setFont(font6);
         firstnameLineEdit_3->setCursor(QCursor(Qt::IBeamCursor));
         firstnameLineEdit_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
@@ -980,7 +934,7 @@ public:
         lastnameLineEdit_3 = new QLineEdit(signupSection_3);
         lastnameLineEdit_3->setObjectName(QString::fromUtf8("lastnameLineEdit_3"));
         lastnameLineEdit_3->setGeometry(QRect(50, 120, 231, 31));
-        lastnameLineEdit_3->setFont(font4);
+        lastnameLineEdit_3->setFont(font6);
         lastnameLineEdit_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -988,7 +942,7 @@ public:
         userLineEdit_6 = new QLineEdit(signupSection_3);
         userLineEdit_6->setObjectName(QString::fromUtf8("userLineEdit_6"));
         userLineEdit_6->setGeometry(QRect(50, 170, 231, 31));
-        userLineEdit_6->setFont(font4);
+        userLineEdit_6->setFont(font6);
         userLineEdit_6->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -996,7 +950,7 @@ public:
         disLineEdit_5 = new QLineEdit(signupSection_3);
         disLineEdit_5->setObjectName(QString::fromUtf8("disLineEdit_5"));
         disLineEdit_5->setGeometry(QRect(50, 220, 231, 31));
-        disLineEdit_5->setFont(font4);
+        disLineEdit_5->setFont(font6);
         disLineEdit_5->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -1004,7 +958,7 @@ public:
         mobileLineEdit_6 = new QLineEdit(signupSection_3);
         mobileLineEdit_6->setObjectName(QString::fromUtf8("mobileLineEdit_6"));
         mobileLineEdit_6->setGeometry(QRect(50, 270, 231, 31));
-        mobileLineEdit_6->setFont(font4);
+        mobileLineEdit_6->setFont(font6);
         mobileLineEdit_6->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -1012,7 +966,7 @@ public:
         passLineEdit_7 = new QLineEdit(signupSection_3);
         passLineEdit_7->setObjectName(QString::fromUtf8("passLineEdit_7"));
         passLineEdit_7->setGeometry(QRect(50, 320, 231, 31));
-        passLineEdit_7->setFont(font4);
+        passLineEdit_7->setFont(font6);
         passLineEdit_7->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius: 5px;\n"
 "padding-left:5px;"));
@@ -1024,12 +978,12 @@ public:
         femaleBtn_3 = new QRadioButton(signupSection_3);
         femaleBtn_3->setObjectName(QString::fromUtf8("femaleBtn_3"));
         femaleBtn_3->setGeometry(QRect(200, 360, 81, 31));
-        femaleBtn_3->setFont(font5);
+        femaleBtn_3->setFont(font7);
         femaleBtn_3->setStyleSheet(QString::fromUtf8("font: 10pt \"Lucida Sans\";"));
         gender_3 = new QLabel(signupSection_3);
         gender_3->setObjectName(QString::fromUtf8("gender_3"));
         gender_3->setGeometry(QRect(50, 360, 71, 31));
-        gender_3->setFont(font5);
+        gender_3->setFont(font7);
         gender_3->setStyleSheet(QString::fromUtf8("font: 10pt \"Lucida Sans\";\n"
 "color:white;"));
         signupBtn_3 = new QPushButton(signupSection_3);
@@ -1070,7 +1024,7 @@ public:
         palette2.setBrush(QPalette::Disabled, QPalette::PlaceholderText, brush10);
 #endif
         signupBtn_3->setPalette(palette2);
-        signupBtn_3->setFont(font6);
+        signupBtn_3->setFont(font8);
         signupBtn_3->setCursor(QCursor(Qt::PointingHandCursor));
         signupBtn_3->setStyleSheet(QString::fromUtf8("color:rgb(255, 255, 255);\n"
 "font: 14pt \"Lucida Sans\";\n"
@@ -1082,7 +1036,7 @@ public:
         signupLabel_3 = new QLabel(signupSection_3);
         signupLabel_3->setObjectName(QString::fromUtf8("signupLabel_3"));
         signupLabel_3->setGeometry(QRect(70, 10, 61, 31));
-        signupLabel_3->setFont(font6);
+        signupLabel_3->setFont(font8);
         signupLabel_3->setStyleSheet(QString::fromUtf8("font: 14pt \"Lucida Sans\";"));
         widget_16 = new QWidget(adminSignInUp);
         widget_16->setObjectName(QString::fromUtf8("widget_16"));
@@ -1384,24 +1338,22 @@ public:
         label_20 = new QLabel(widget_19);
         label_20->setObjectName(QString::fromUtf8("label_20"));
         label_20->setGeometry(QRect(500, 20, 13, 13));
-        QFont font7;
-        font7.setPointSize(5);
-        label_20->setFont(font7);
+        label_20->setFont(font3);
         label_20->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/alert-circle.svg);"));
         label_21 = new QLabel(widget_19);
         label_21->setObjectName(QString::fromUtf8("label_21"));
         label_21->setGeometry(QRect(20, 120, 21, 21));
-        label_21->setFont(font7);
+        label_21->setFont(font3);
         label_21->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/github.svg);"));
         label_22 = new QLabel(widget_19);
         label_22->setObjectName(QString::fromUtf8("label_22"));
         label_22->setGeometry(QRect(40, 120, 31, 21));
-        label_22->setFont(font7);
+        label_22->setFont(font3);
         label_22->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/facebook.svg);"));
         label_23 = new QLabel(widget_19);
         label_23->setObjectName(QString::fromUtf8("label_23"));
         label_23->setGeometry(QRect(70, 120, 21, 21));
-        label_23->setFont(font7);
+        label_23->setFont(font3);
         label_23->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/twitter.svg);"));
         container->addWidget(userPanel);
         userPanel2 = new QWidget();
@@ -1513,17 +1465,17 @@ public:
         label_28 = new QLabel(footer_2);
         label_28->setObjectName(QString::fromUtf8("label_28"));
         label_28->setGeometry(QRect(460, 120, 21, 21));
-        label_28->setFont(font7);
+        label_28->setFont(font3);
         label_28->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/github.svg);"));
         label_29 = new QLabel(footer_2);
         label_29->setObjectName(QString::fromUtf8("label_29"));
         label_29->setGeometry(QRect(480, 120, 31, 21));
-        label_29->setFont(font7);
+        label_29->setFont(font3);
         label_29->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/facebook.svg);"));
         label_30 = new QLabel(footer_2);
         label_30->setObjectName(QString::fromUtf8("label_30"));
         label_30->setGeometry(QRect(510, 120, 21, 21));
-        label_30->setFont(font7);
+        label_30->setFont(font3);
         label_30->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/twitter.svg);"));
         header = new QWidget(userPanel2);
         header->setObjectName(QString::fromUtf8("header"));
@@ -1810,7 +1762,136 @@ public:
         container->addWidget(adminPanel);
         page = new QWidget();
         page->setObjectName(QString::fromUtf8("page"));
+        frame_3 = new QFrame(page);
+        frame_3->setObjectName(QString::fromUtf8("frame_3"));
+        frame_3->setGeometry(QRect(600, 500, 179, 201));
+        frame_3->setCursor(QCursor(Qt::ArrowCursor));
+        frame_3->setFrameShape(QFrame::StyledPanel);
+        frame_3->setFrameShadow(QFrame::Raised);
+        verticalLayout_5 = new QVBoxLayout(frame_3);
+        verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
+        label_2 = new QLabel(frame_3);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/white/send.svg);\n"
+"font: 12pt \"MS Shell Dlg 2\";"));
+
+        verticalLayout_5->addWidget(label_2);
+
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        sendParcel = new QLabel(frame_3);
+        sendParcel->setObjectName(QString::fromUtf8("sendParcel"));
+        sendParcel->setWordWrap(true);
+
+        verticalLayout_2->addWidget(sendParcel);
+
+        pushButton_2 = new QPushButton(frame_3);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_2->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/arrow-right-circle.svg);\n"
+"font: 22pt \"MS Shell Dlg 2\";"));
+
+        verticalLayout_2->addWidget(pushButton_2);
+
+
+        verticalLayout_5->addLayout(verticalLayout_2);
+
+        frame_2 = new QFrame(page);
+        frame_2->setObjectName(QString::fromUtf8("frame_2"));
+        frame_2->setGeometry(QRect(160, 370, 201, 201));
+        frame_2->setCursor(QCursor(Qt::PointingHandCursor));
+        frame_2->setFrameShape(QFrame::StyledPanel);
+        frame_2->setFrameShadow(QFrame::Raised);
+        verticalLayout = new QVBoxLayout(frame_2);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        label = new QLabel(frame_2);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/white/archive.svg);\n"
+"image: url(:/res/icons/black/archive.svg);"));
+
+        verticalLayout->addWidget(label);
+
+        verticalLayout_4 = new QVBoxLayout();
+        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
+        addStore = new QLabel(frame_2);
+        addStore->setObjectName(QString::fromUtf8("addStore"));
+        addStore->setLayoutDirection(Qt::LeftToRight);
+        addStore->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);"));
+        addStore->setWordWrap(true);
+
+        verticalLayout_4->addWidget(addStore);
+
+        pushButton = new QPushButton(frame_2);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setMinimumSize(QSize(0, 0));
+        QFont font9;
+        font9.setFamily(QString::fromUtf8("Lucida Sans"));
+        font9.setPointSize(22);
+        font9.setBold(false);
+        font9.setItalic(false);
+        font9.setWeight(50);
+        pushButton->setFont(font9);
+        pushButton->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/arrow-right-circle.svg);\n"
+"font: 22pt \"Lucida Sans\";"));
+
+        verticalLayout_4->addWidget(pushButton);
+
+
+        verticalLayout->addLayout(verticalLayout_4);
+
+        frame_4 = new QFrame(page);
+        frame_4->setObjectName(QString::fromUtf8("frame_4"));
+        frame_4->setEnabled(true);
+        frame_4->setGeometry(QRect(770, 260, 221, 211));
+        frame_4->setCursor(QCursor(Qt::ArrowCursor));
+        frame_4->setFrameShape(QFrame::StyledPanel);
+        frame_4->setFrameShadow(QFrame::Raised);
+        verticalLayout_6 = new QVBoxLayout(frame_4);
+        verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
+        label_3 = new QLabel(frame_4);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/white/truck.svg);"));
+
+        verticalLayout_6->addWidget(label_3);
+
+        verticalLayout_3 = new QVBoxLayout();
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        joinDelivery = new QLabel(frame_4);
+        joinDelivery->setObjectName(QString::fromUtf8("joinDelivery"));
+        joinDelivery->setWordWrap(true);
+
+        verticalLayout_3->addWidget(joinDelivery);
+
+        pushButton_3 = new QPushButton(frame_4);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pushButton_3->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_3->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/arrow-right-circle.svg);\n"
+"font: 22pt \"MS Shell Dlg 2\";"));
+
+        verticalLayout_3->addWidget(pushButton_3);
+
+
+        verticalLayout_6->addLayout(verticalLayout_3);
+
+        widget_18 = new QWidget(page);
+        widget_18->setObjectName(QString::fromUtf8("widget_18"));
+        widget_18->setGeometry(QRect(390, 230, 293, 319));
+        widget_18->setStyleSheet(QString::fromUtf8("QWidget{\n"
+"	background-color: qlineargradient(spread:pad, x1:1, y1:0.555, x2:1, y2:1, stop:0.221591 rgba(254, 247, 239, 255), stop:1 rgba(190, 22, 0, 255));\n"
+"}\n"
+"\n"
+"QWidget:Hover{\n"
+"background-color: rgb(254, 247, 239);\n"
+"}\n"
+""));
         container->addWidget(page);
+        pushButton_12 = new QPushButton(centralwidget);
+        pushButton_12->setObjectName(QString::fromUtf8("pushButton_12"));
+        pushButton_12->setGeometry(QRect(20, 10, 31, 31));
+        pushButton_12->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_12->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/white/home.svg);\n"
+"border:none;"));
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -1831,18 +1912,14 @@ public:
         actionSign_up_3->setText(QApplication::translate("MainWindow", "Sign up", nullptr));
         actionSign_in_3->setText(QApplication::translate("MainWindow", "Sign in", nullptr));
         actionSign_up_4->setText(QApplication::translate("MainWindow", "Sign up", nullptr));
-        lineEdit_Searchbar->setPlaceholderText(QApplication::translate("MainWindow", "Search for products", nullptr));
         Btn_signin->setText(QApplication::translate("MainWindow", "Sign in", nullptr));
         Btn_signup->setText(QApplication::translate("MainWindow", "Sign up", nullptr));
-        label->setText(QString());
-        addStore->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; font-weight:600; color:#818cf8;\">Add Store</span></p></body></html>", nullptr));
-        pushButton->setText(QString());
-        label_2->setText(QString());
-        sendParcel->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; font-weight:600;\">Send Parcel</span></p></body></html>", nullptr));
-        pushButton_2->setText(QString());
-        label_3->setText(QString());
-        joinDelivery->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; font-weight:600;\">Join as a delivery man</span></p></body></html>", nullptr));
-        pushButton_3->setText(QString());
+        pushButton_11->setText(QApplication::translate("MainWindow", "Send Parcel", nullptr));
+        pushButton_26->setText(QApplication::translate("MainWindow", "Join as a transporter", nullptr));
+        pushButton_27->setText(QApplication::translate("MainWindow", "Admin Panel", nullptr));
+        label_31->setText(QString());
+        label_33->setText(QString());
+        label_43->setText(QString());
         userLineEdit->setText(QString());
         userLineEdit->setPlaceholderText(QApplication::translate("MainWindow", "username", nullptr));
         passLineEdit->setPlaceholderText(QApplication::translate("MainWindow", "password", nullptr));
@@ -1963,6 +2040,16 @@ public:
         label_46->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">Proceed</span></p></body></html>", nullptr));
         label_50->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">Electronics</span></p></body></html>", nullptr));
         pushButton_25->setText(QString());
+        label_2->setText(QString());
+        sendParcel->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; font-weight:600;\">Send Parcel</span></p></body></html>", nullptr));
+        pushButton_2->setText(QString());
+        label->setText(QString());
+        addStore->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; font-weight:600; color:#ffffff;\">Add Store</span></p></body></html>", nullptr));
+        pushButton->setText(QString());
+        label_3->setText(QString());
+        joinDelivery->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; font-weight:600;\">Join as a delivery man</span></p></body></html>", nullptr));
+        pushButton_3->setText(QString());
+        pushButton_12->setText(QString());
     } // retranslateUi
 
 };

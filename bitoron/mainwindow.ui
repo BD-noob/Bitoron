@@ -39,10 +39,10 @@
      <widget class="QWidget" name="upperSection" native="true">
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>-1</x>
         <y>0</y>
-        <width>1200</width>
-        <height>1200</height>
+        <width>1201</width>
+        <height>341</height>
        </rect>
       </property>
       <property name="minimumSize">
@@ -54,50 +54,37 @@
       <property name="styleSheet">
        <string notr="true"/>
       </property>
-      <widget class="QLineEdit" name="lineEdit_Searchbar">
-       <property name="geometry">
-        <rect>
-         <x>250</x>
-         <y>110</y>
-         <width>461</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(255, 255, 255);
-border-top-left-radius: 12px;
-border-top-right-radius: 3px;
-border-bottom-right-radius: 12px;
-border-bottom-left-radius: 3px;
-padding-left:8px;
-font: 11pt &quot;Lucida Sans&quot;;
-color: rgb(206, 36, 14);</string>
-       </property>
-       <property name="placeholderText">
-        <string>Search for products</string>
-       </property>
-      </widget>
       <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
-         <x>760</x>
-         <y>20</y>
+         <x>780</x>
+         <y>10</y>
          <width>201</width>
-         <height>61</height>
+         <height>52</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
         <item>
          <widget class="QPushButton" name="Btn_signin">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
           <property name="cursor">
            <cursorShape>PointingHandCursor</cursorShape>
           </property>
           <property name="styleSheet">
-           <string notr="true">color: rgb(206, 36, 14);
-font: 16pt &quot;Lucida Sans&quot;;
+           <string notr="true">color: rgb(255, 255, 255);
 background-color: none;
-border: none;
-border-color: none;</string>
+font: 16pt &quot;Lucida Sans&quot;;
+color: rgb(254, 247, 239);
+background-color: rgba(206, 36, 14, 0.6);
+</string>
           </property>
           <property name="text">
            <string>Sign in</string>
@@ -106,6 +93,12 @@ border-color: none;</string>
         </item>
         <item>
          <widget class="QPushButton" name="Btn_signup">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
           <property name="font">
            <font>
             <family>Lucida Sans</family>
@@ -121,11 +114,11 @@ border-color: none;</string>
           </property>
           <property name="styleSheet">
            <string notr="true">color: rgb(255, 255, 255);
-font: 16pt &quot;Lucida Sans&quot;;
-color: rgb(206, 36, 14);
 background-color: none;
-border: none;
-border-color: none;</string>
+font: 16pt &quot;Lucida Sans&quot;;
+color: rgb(254, 247, 239);
+background-color: rgba(206, 36, 14, 0.6);
+</string>
           </property>
           <property name="text">
            <string>Sign up</string>
@@ -139,8 +132,8 @@ border-color: none;</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>1000</width>
-         <height>600</height>
+         <width>1001</width>
+         <height>571</height>
         </rect>
        </property>
        <property name="styleSheet">
@@ -148,35 +141,35 @@ border-color: none;</string>
        </property>
       </widget>
       <zorder>widget_9</zorder>
-      <zorder>lineEdit_Searchbar</zorder>
       <zorder>layoutWidget</zorder>
      </widget>
      <widget class="QWidget" name="middleSection" native="true">
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>200</y>
+        <y>229</y>
         <width>1000</width>
-        <height>400</height>
+        <height>371</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <kerning>true</kerning>
+       </font>
+      </property>
       <property name="styleSheet">
-       <string notr="true">background-color: none;
-border-bottom-left-radius: 50px;
-border-bottom-right-radius: 100px;
-border-top-left-radius: 100px;
-border-top-right-radius: 20px;</string>
+       <string notr="true">background-color: none;</string>
       </property>
       <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
-         <x>40</x>
-         <y>30</y>
-         <width>921</width>
-         <height>281</height>
+         <x>20</x>
+         <y>20</y>
+         <width>961</width>
+         <height>321</height>
         </rect>
        </property>
-       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0,0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0">
         <property name="spacing">
          <number>40</number>
         </property>
@@ -187,247 +180,133 @@ border-top-right-radius: 20px;</string>
          <number>0</number>
         </property>
         <item>
-         <widget class="QWidget" name="widget_3" native="true">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(206, 36, 14);
-background-color: rgb(255, 251, 238);
-color: white;
-border-bottom-left-radius: 50px;
-border-bottom-right-radius: 100px;
-border-top-left-radius: 100px;
-border-top-right-radius: 20px;
-</string>
+         <widget class="QPushButton" name="pushButton_11">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>319</height>
+           </size>
           </property>
-          <widget class="QFrame" name="frame_2">
-           <property name="geometry">
-            <rect>
-             <x>40</x>
-             <y>50</y>
-             <width>201</width>
-             <height>201</height>
-            </rect>
-           </property>
-           <property name="cursor">
-            <cursorShape>PointingHandCursor</cursorShape>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::StyledPanel</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout">
-            <item>
-             <widget class="QLabel" name="label">
-              <property name="styleSheet">
-               <string notr="true">image: url(:/res/icons/white/archive.svg);
-image: url(:/res/icons/black/archive.svg);</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_4">
-              <item>
-               <widget class="QLabel" name="addStore">
-                <property name="layoutDirection">
-                 <enum>Qt::LeftToRight</enum>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">color: rgb(0, 0, 0);
-color: rgb(129, 140, 248);</string>
-                </property>
-                <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600; color:#818cf8;&quot;&gt;Add Store&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                </property>
-                <property name="wordWrap">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <family>Lucida Sans</family>
-                  <pointsize>22</pointsize>
-                  <weight>50</weight>
-                  <italic>false</italic>
-                  <bold>false</bold>
-                 </font>
-                </property>
-                <property name="cursor">
-                 <cursorShape>PointingHandCursor</cursorShape>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">image: url(:/res/icons/black/arrow-right-circle.svg);
-font: 22pt &quot;Lucida Sans&quot;;</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </widget>
+          <property name="font">
+           <font>
+            <family>MV Boli</family>
+            <pointsize>14</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+            <kerning>true</kerning>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::DefaultContextMenu</enum>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	font: 14pt &quot;MV Boli&quot;;
+	color: rgb(0, 0, 0);
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.555, x2:1, y2:1, stop:0.221591 rgba(254, 247, 239, 255), stop:1 rgba(190, 22, 0, 255));
+border: none;
+}
+
+QPushButton::Hover{
+background-color: rgb(254, 247, 239);
+}</string>
+          </property>
+          <property name="text">
+           <string>Send Parcel</string>
+          </property>
+          <property name="icon">
+           <iconset resource="bitoronImages.qrc">
+            <normaloff>:/res/icons/dark Orange/send.svg</normaloff>:/res/icons/dark Orange/send.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
          </widget>
         </item>
         <item>
-         <widget class="QWidget" name="widget_4" native="true">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(206, 36, 14);
-color: white;
-border-bottom-left-radius: 50px;
-border-bottom-right-radius: 100px;
-border-top-left-radius: 100px;
-border-top-right-radius: 20px;
-</string>
+         <widget class="QPushButton" name="pushButton_26">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>319</height>
+           </size>
           </property>
-          <widget class="QFrame" name="frame_3">
-           <property name="geometry">
-            <rect>
-             <x>50</x>
-             <y>50</y>
-             <width>179</width>
-             <height>201</height>
-            </rect>
-           </property>
-           <property name="cursor">
-            <cursorShape>ArrowCursor</cursorShape>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::StyledPanel</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_5">
-            <item>
-             <widget class="QLabel" name="label_2">
-              <property name="styleSheet">
-               <string notr="true">image: url(:/res/icons/white/send.svg);
-font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_2">
-              <item>
-               <widget class="QLabel" name="sendParcel">
-                <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt;Send Parcel&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                </property>
-                <property name="wordWrap">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_2">
-                <property name="cursor">
-                 <cursorShape>PointingHandCursor</cursorShape>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">image: url(:/res/icons/black/arrow-right-circle.svg);
-font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </widget>
-         </widget>
-        </item>
-        <item>
-         <widget class="QWidget" name="widget_5" native="true">
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(206, 36, 14);
-color: white;
-border-bottom-left-radius: 50px;
-border-bottom-right-radius: 100px;
-border-top-left-radius: 100px;
-border-top-right-radius: 20px;
-</string>
+          <property name="font">
+           <font>
+            <family>MV Boli</family>
+            <pointsize>14</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+            <underline>false</underline>
+            <strikeout>false</strikeout>
+            <kerning>true</kerning>
+           </font>
           </property>
-          <widget class="QFrame" name="frame_4">
-           <property name="enabled">
-            <bool>true</bool>
-           </property>
-           <property name="geometry">
-            <rect>
-             <x>30</x>
-             <y>40</y>
-             <width>221</width>
-             <height>211</height>
-            </rect>
-           </property>
-           <property name="cursor">
-            <cursorShape>ArrowCursor</cursorShape>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::StyledPanel</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_6">
-            <item>
-             <widget class="QLabel" name="label_3">
-              <property name="styleSheet">
-               <string notr="true">image: url(:/res/icons/white/truck.svg);</string>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_3">
-              <item>
-               <widget class="QLabel" name="joinDelivery">
-                <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt;Join as a delivery man&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                </property>
-                <property name="wordWrap">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButton_3">
-                <property name="cursor">
-                 <cursorShape>PointingHandCursor</cursorShape>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">image: url(:/res/icons/black/arrow-right-circle.svg);
-font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
-                </property>
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </widget>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::DefaultContextMenu</enum>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	font: 14pt &quot;MV Boli&quot;;
+	color: rgb(0, 0, 0);
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.555, x2:1, y2:1, stop:0.221591 rgba(254, 247, 239, 255), stop:1 rgba(190, 22, 0, 255));
+border: none;
+}
+
+QPushButton::Hover{
+background-color: rgb(254, 247, 239);
+}</string>
+          </property>
+          <property name="text">
+           <string>Join as a transporter</string>
+          </property>
+          <property name="icon">
+           <iconset resource="bitoronImages.qrc">
+            <normaloff>:/res/icons/dark Orange/truck.svg</normaloff>:/res/icons/dark Orange/truck.svg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
          </widget>
         </item>
        </layout>
@@ -436,16 +315,157 @@ font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
      <widget class="QWidget" name="footer" native="true">
       <property name="geometry">
        <rect>
-        <x>-1</x>
-        <y>599</y>
+        <x>0</x>
+        <y>339</y>
         <width>1001</width>
-        <height>101</height>
+        <height>361</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(206, 36, 14);</string>
+       <string notr="true">background-color: rgb(206, 36, 14);
+background-color: rgb(190, 22, 0);</string>
       </property>
+      <widget class="QPushButton" name="pushButton_27">
+       <property name="geometry">
+        <rect>
+         <x>850</x>
+         <y>290</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>10</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>MV Boli</family>
+         <pointsize>14</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+         <kerning>true</kerning>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::DefaultContextMenu</enum>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	font: 14pt &quot;MV Boli&quot;;
+	color: rgb(254, 247, 239);
+	background-color:rgba(254, 247, 239,0.1);
+	border: none;
+}
+
+</string>
+       </property>
+       <property name="text">
+        <string>Admin Panel</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>100</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_31">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>330</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/res/icons/black/facebook.svg);
+image: url(:/res/icons/white/facebook.svg);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_33">
+       <property name="geometry">
+        <rect>
+         <x>520</x>
+         <y>330</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/res/icons/black/twitter.svg);
+image: url(:/res/icons/white/twitter.svg);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_43">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>330</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>5</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/res/icons/black/github.svg);
+image: url(:/res/icons/white/github.svg);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
      </widget>
+     <zorder>footer</zorder>
+     <zorder>upperSection</zorder>
+     <zorder>middleSection</zorder>
     </widget>
     <widget class="QWidget" name="deliverySignInUp">
      <widget class="QWidget" name="signinSection" native="true">
@@ -4413,7 +4433,251 @@ border:none;
       <zorder>label_50</zorder>
      </widget>
     </widget>
-    <widget class="QWidget" name="page"/>
+    <widget class="QWidget" name="page">
+     <widget class="QFrame" name="frame_3">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>500</y>
+        <width>179</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">image: url(:/res/icons/white/send.svg);
+font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="sendParcel">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt;Send Parcel&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/res/icons/black/arrow-right-circle.svg);
+font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>370</y>
+        <width>201</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">image: url(:/res/icons/white/archive.svg);
+image: url(:/res/icons/black/archive.svg);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLabel" name="addStore">
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600; color:#ffffff;&quot;&gt;Add Store&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Sans</family>
+             <pointsize>22</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/res/icons/black/arrow-right-circle.svg);
+font: 22pt &quot;Lucida Sans&quot;;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="frame_4">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>260</y>
+        <width>221</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true">image: url(:/res/icons/white/truck.svg);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="joinDelivery">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt;Join as a delivery man&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/res/icons/black/arrow-right-circle.svg);
+font: 22pt &quot;MS Shell Dlg 2&quot;;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widget_18" native="true">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>230</y>
+        <width>293</width>
+        <height>319</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.555, x2:1, y2:1, stop:0.221591 rgba(254, 247, 239, 255), stop:1 rgba(190, 22, 0, 255));
+}
+
+QWidget:Hover{
+background-color: rgb(254, 247, 239);
+}
+</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_12">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/res/icons/white/home.svg);
+border:none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
    </widget>
   </widget>
   <action name="actionSign_up">
@@ -4452,6 +4716,8 @@ border:none;
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="bitoronImages.qrc"/>
+ </resources>
  <connections/>
 </ui>
