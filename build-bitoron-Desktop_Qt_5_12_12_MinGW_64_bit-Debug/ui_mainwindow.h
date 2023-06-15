@@ -45,13 +45,14 @@ public:
     QPushButton *Btn_signin;
     QPushButton *Btn_signup;
     QWidget *widget_9;
+    QPushButton *logo;
     QWidget *middleSection;
     QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout_2;
-    QPushButton *pushButton_11;
-    QPushButton *pushButton_26;
+    QPushButton *Btn_sendParcel;
+    QPushButton *Btn_deliveryMan;
     QWidget *footer;
-    QPushButton *pushButton_27;
+    QPushButton *Btn_admin;
     QLabel *label_31;
     QLabel *label_33;
     QLabel *label_43;
@@ -78,6 +79,7 @@ public:
     QPushButton *signupBtn;
     QLabel *iconSignup;
     QLabel *signupLabel;
+    QPushButton *pushButton_11;
     QWidget *userSignInUp;
     QWidget *signinSection_2;
     QLineEdit *userLineEdit_3;
@@ -232,7 +234,6 @@ public:
     QLabel *joinDelivery;
     QPushButton *pushButton_3;
     QWidget *widget_18;
-    QPushButton *pushButton_12;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -312,8 +313,21 @@ public:
         widget_9->setObjectName(QString::fromUtf8("widget_9"));
         widget_9->setGeometry(QRect(0, 0, 1001, 571));
         widget_9->setStyleSheet(QString::fromUtf8("border-image: url(:/res/images/bgnavbar1.jpg);"));
+        logo = new QPushButton(upperSection);
+        logo->setObjectName(QString::fromUtf8("logo"));
+        logo->setGeometry(QRect(20, 10, 61, 61));
+        logo->setMinimumSize(QSize(0, 40));
+        logo->setCursor(QCursor(Qt::PointingHandCursor));
+        logo->setStyleSheet(QString::fromUtf8("background-color: none;\n"
+"border: none;\n"
+""));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/res/logos/bitoron-high-resolution-logo-color-on-transparent-background.png"), QSize(), QIcon::Normal, QIcon::Off);
+        logo->setIcon(icon);
+        logo->setIconSize(QSize(60, 60));
         widget_9->raise();
         layoutWidget->raise();
+        logo->raise();
         middleSection = new QWidget(homePg);
         middleSection->setObjectName(QString::fromUtf8("middleSection"));
         middleSection->setGeometry(QRect(0, 229, 1000, 371));
@@ -329,9 +343,9 @@ public:
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         horizontalLayout_2->setSizeConstraint(QLayout::SetDefaultConstraint);
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        pushButton_11 = new QPushButton(layoutWidget1);
-        pushButton_11->setObjectName(QString::fromUtf8("pushButton_11"));
-        pushButton_11->setMinimumSize(QSize(0, 319));
+        Btn_sendParcel = new QPushButton(layoutWidget1);
+        Btn_sendParcel->setObjectName(QString::fromUtf8("Btn_sendParcel"));
+        Btn_sendParcel->setMinimumSize(QSize(0, 319));
         QFont font2;
         font2.setFamily(QString::fromUtf8("MV Boli"));
         font2.setPointSize(14);
@@ -341,39 +355,12 @@ public:
         font2.setWeight(50);
         font2.setStrikeOut(false);
         font2.setKerning(true);
-        pushButton_11->setFont(font2);
-        pushButton_11->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_11->setContextMenuPolicy(Qt::DefaultContextMenu);
-        pushButton_11->setLayoutDirection(Qt::LeftToRight);
-        pushButton_11->setAutoFillBackground(false);
-        pushButton_11->setStyleSheet(QString::fromUtf8("QPushButton{\n"
-"	font: 14pt \"MV Boli\";\n"
-"	color: rgb(0, 0, 0);\n"
-"	background-color: qlineargradient(spread:pad, x1:1, y1:0.555, x2:1, y2:1, stop:0.221591 rgba(254, 247, 239, 255), stop:1 rgba(190, 22, 0, 255));\n"
-"border: none;\n"
-"}\n"
-"\n"
-"QPushButton::Hover{\n"
-"background-color: rgb(254, 247, 239);\n"
-"}"));
-        QIcon icon;
-        icon.addFile(QString::fromUtf8(":/res/icons/dark Orange/send.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_11->setIcon(icon);
-        pushButton_11->setIconSize(QSize(100, 100));
-        pushButton_11->setCheckable(false);
-        pushButton_11->setFlat(false);
-
-        horizontalLayout_2->addWidget(pushButton_11);
-
-        pushButton_26 = new QPushButton(layoutWidget1);
-        pushButton_26->setObjectName(QString::fromUtf8("pushButton_26"));
-        pushButton_26->setMinimumSize(QSize(0, 319));
-        pushButton_26->setFont(font2);
-        pushButton_26->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_26->setContextMenuPolicy(Qt::DefaultContextMenu);
-        pushButton_26->setLayoutDirection(Qt::LeftToRight);
-        pushButton_26->setAutoFillBackground(false);
-        pushButton_26->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+        Btn_sendParcel->setFont(font2);
+        Btn_sendParcel->setCursor(QCursor(Qt::PointingHandCursor));
+        Btn_sendParcel->setContextMenuPolicy(Qt::DefaultContextMenu);
+        Btn_sendParcel->setLayoutDirection(Qt::LeftToRight);
+        Btn_sendParcel->setAutoFillBackground(false);
+        Btn_sendParcel->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "	font: 14pt \"MV Boli\";\n"
 "	color: rgb(0, 0, 0);\n"
 "	background-color: qlineargradient(spread:pad, x1:1, y1:0.555, x2:1, y2:1, stop:0.221591 rgba(254, 247, 239, 255), stop:1 rgba(190, 22, 0, 255));\n"
@@ -384,30 +371,57 @@ public:
 "background-color: rgb(254, 247, 239);\n"
 "}"));
         QIcon icon1;
-        icon1.addFile(QString::fromUtf8(":/res/icons/dark Orange/truck.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_26->setIcon(icon1);
-        pushButton_26->setIconSize(QSize(100, 100));
-        pushButton_26->setCheckable(false);
-        pushButton_26->setFlat(false);
+        icon1.addFile(QString::fromUtf8(":/res/icons/dark Orange/send.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        Btn_sendParcel->setIcon(icon1);
+        Btn_sendParcel->setIconSize(QSize(100, 100));
+        Btn_sendParcel->setCheckable(false);
+        Btn_sendParcel->setFlat(false);
 
-        horizontalLayout_2->addWidget(pushButton_26);
+        horizontalLayout_2->addWidget(Btn_sendParcel);
+
+        Btn_deliveryMan = new QPushButton(layoutWidget1);
+        Btn_deliveryMan->setObjectName(QString::fromUtf8("Btn_deliveryMan"));
+        Btn_deliveryMan->setMinimumSize(QSize(0, 319));
+        Btn_deliveryMan->setFont(font2);
+        Btn_deliveryMan->setCursor(QCursor(Qt::PointingHandCursor));
+        Btn_deliveryMan->setContextMenuPolicy(Qt::DefaultContextMenu);
+        Btn_deliveryMan->setLayoutDirection(Qt::LeftToRight);
+        Btn_deliveryMan->setAutoFillBackground(false);
+        Btn_deliveryMan->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"	font: 14pt \"MV Boli\";\n"
+"	color: rgb(0, 0, 0);\n"
+"	background-color: qlineargradient(spread:pad, x1:1, y1:0.555, x2:1, y2:1, stop:0.221591 rgba(254, 247, 239, 255), stop:1 rgba(190, 22, 0, 255));\n"
+"border: none;\n"
+"}\n"
+"\n"
+"QPushButton::Hover{\n"
+"background-color: rgb(254, 247, 239);\n"
+"}"));
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8(":/res/icons/dark Orange/truck.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        Btn_deliveryMan->setIcon(icon2);
+        Btn_deliveryMan->setIconSize(QSize(100, 100));
+        Btn_deliveryMan->setCheckable(false);
+        Btn_deliveryMan->setFlat(false);
+
+        horizontalLayout_2->addWidget(Btn_deliveryMan);
 
         footer = new QWidget(homePg);
         footer->setObjectName(QString::fromUtf8("footer"));
         footer->setGeometry(QRect(0, 339, 1001, 361));
         footer->setStyleSheet(QString::fromUtf8("background-color: rgb(206, 36, 14);\n"
 "background-color: rgb(190, 22, 0);"));
-        pushButton_27 = new QPushButton(footer);
-        pushButton_27->setObjectName(QString::fromUtf8("pushButton_27"));
-        pushButton_27->setGeometry(QRect(850, 290, 131, 31));
-        pushButton_27->setMinimumSize(QSize(0, 10));
-        pushButton_27->setMaximumSize(QSize(16777215, 50));
-        pushButton_27->setFont(font2);
-        pushButton_27->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_27->setContextMenuPolicy(Qt::DefaultContextMenu);
-        pushButton_27->setLayoutDirection(Qt::LeftToRight);
-        pushButton_27->setAutoFillBackground(false);
-        pushButton_27->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+        Btn_admin = new QPushButton(footer);
+        Btn_admin->setObjectName(QString::fromUtf8("Btn_admin"));
+        Btn_admin->setGeometry(QRect(850, 290, 131, 31));
+        Btn_admin->setMinimumSize(QSize(0, 10));
+        Btn_admin->setMaximumSize(QSize(16777215, 50));
+        Btn_admin->setFont(font2);
+        Btn_admin->setCursor(QCursor(Qt::PointingHandCursor));
+        Btn_admin->setContextMenuPolicy(Qt::DefaultContextMenu);
+        Btn_admin->setLayoutDirection(Qt::LeftToRight);
+        Btn_admin->setAutoFillBackground(false);
+        Btn_admin->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "	font: 14pt \"MV Boli\";\n"
 "	color: rgb(254, 247, 239);\n"
 "	background-color:rgba(254, 247, 239,0.1);\n"
@@ -415,9 +429,9 @@ public:
 "}\n"
 "\n"
 ""));
-        pushButton_27->setIconSize(QSize(100, 100));
-        pushButton_27->setCheckable(false);
-        pushButton_27->setFlat(false);
+        Btn_admin->setIconSize(QSize(100, 100));
+        Btn_admin->setCheckable(false);
+        Btn_admin->setFlat(false);
         label_31 = new QLabel(footer);
         label_31->setObjectName(QString::fromUtf8("label_31"));
         label_31->setGeometry(QRect(490, 330, 31, 21));
@@ -446,7 +460,7 @@ public:
         deliverySignInUp->setObjectName(QString::fromUtf8("deliverySignInUp"));
         signinSection = new QWidget(deliverySignInUp);
         signinSection->setObjectName(QString::fromUtf8("signinSection"));
-        signinSection->setGeometry(QRect(130, 100, 331, 451));
+        signinSection->setGeometry(QRect(170, 130, 331, 451));
         signinSection->setStyleSheet(QString::fromUtf8("border-bottom-left-radius:80px;\n"
 "border-bottom-right-radius:80px;\n"
 "border-top-right-radius:80px;"));
@@ -514,7 +528,7 @@ public:
         widget_8->setStyleSheet(QString::fromUtf8("border-image: url(:/res/images/bgnavbar1.jpg);"));
         signupSection = new QWidget(deliverySignInUp);
         signupSection->setObjectName(QString::fromUtf8("signupSection"));
-        signupSection->setGeometry(QRect(540, 100, 331, 451));
+        signupSection->setGeometry(QRect(500, 130, 331, 451));
         signupSection->setStyleSheet(QString::fromUtf8("border-bottom-left-radius:80px;\n"
 "border-top-right-radius:80px;\n"
 "border-top-left-radius:80px;"));
@@ -658,15 +672,25 @@ public:
         signupLabel->setGeometry(QRect(70, 10, 61, 31));
         signupLabel->setFont(font8);
         signupLabel->setStyleSheet(QString::fromUtf8("font: 14pt \"Lucida Sans\";"));
+        pushButton_11 = new QPushButton(deliverySignInUp);
+        pushButton_11->setObjectName(QString::fromUtf8("pushButton_11"));
+        pushButton_11->setGeometry(QRect(10, 10, 75, 51));
+        pushButton_11->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton_11->setStyleSheet(QString::fromUtf8("border: none;"));
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8(":/res/logos/bitoron-website-favicon-color.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_11->setIcon(icon3);
+        pushButton_11->setIconSize(QSize(60, 60));
         container->addWidget(deliverySignInUp);
         widget_8->raise();
         signupSection->raise();
         signinSection->raise();
+        pushButton_11->raise();
         userSignInUp = new QWidget();
         userSignInUp->setObjectName(QString::fromUtf8("userSignInUp"));
         signinSection_2 = new QWidget(userSignInUp);
         signinSection_2->setObjectName(QString::fromUtf8("signinSection_2"));
-        signinSection_2->setGeometry(QRect(170, 140, 331, 451));
+        signinSection_2->setGeometry(QRect(170, 130, 331, 451));
         signinSection_2->setStyleSheet(QString::fromUtf8("border-bottom-left-radius:80px;\n"
 "border-bottom-right-radius:80px;\n"
 "border-top-right-radius:80px;"));
@@ -724,7 +748,7 @@ public:
         widget_12->setStyleSheet(QString::fromUtf8("border-image: url(:/res/images/bgnavbar1.jpg);"));
         signupSection_2 = new QWidget(userSignInUp);
         signupSection_2->setObjectName(QString::fromUtf8("signupSection_2"));
-        signupSection_2->setGeometry(QRect(500, 140, 331, 451));
+        signupSection_2->setGeometry(QRect(500, 130, 331, 451));
         signupSection_2->setStyleSheet(QString::fromUtf8("border-bottom-left-radius:80px;\n"
 "border-top-right-radius:80px;\n"
 "border-top-left-radius:80px;"));
@@ -858,7 +882,7 @@ public:
         adminSignInUp->setObjectName(QString::fromUtf8("adminSignInUp"));
         signinSection_3 = new QWidget(adminSignInUp);
         signinSection_3->setObjectName(QString::fromUtf8("signinSection_3"));
-        signinSection_3->setGeometry(QRect(180, 120, 331, 451));
+        signinSection_3->setGeometry(QRect(170, 130, 331, 451));
         signinSection_3->setStyleSheet(QString::fromUtf8("border-bottom-left-radius:80px;\n"
 "border-bottom-right-radius:80px;\n"
 "border-top-right-radius:80px;"));
@@ -912,7 +936,7 @@ public:
         signinLabel_3->raise();
         signupSection_3 = new QWidget(adminSignInUp);
         signupSection_3->setObjectName(QString::fromUtf8("signupSection_3"));
-        signupSection_3->setGeometry(QRect(510, 120, 331, 451));
+        signupSection_3->setGeometry(QRect(500, 130, 331, 451));
         signupSection_3->setStyleSheet(QString::fromUtf8("border-bottom-left-radius:80px;\n"
 "border-top-right-radius:80px;\n"
 "border-top-left-radius:80px;"));
@@ -1886,12 +1910,6 @@ public:
 "}\n"
 ""));
         container->addWidget(page);
-        pushButton_12 = new QPushButton(centralwidget);
-        pushButton_12->setObjectName(QString::fromUtf8("pushButton_12"));
-        pushButton_12->setGeometry(QRect(20, 10, 31, 31));
-        pushButton_12->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_12->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/white/home.svg);\n"
-"border:none;"));
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -1914,9 +1932,10 @@ public:
         actionSign_up_4->setText(QApplication::translate("MainWindow", "Sign up", nullptr));
         Btn_signin->setText(QApplication::translate("MainWindow", "Sign in", nullptr));
         Btn_signup->setText(QApplication::translate("MainWindow", "Sign up", nullptr));
-        pushButton_11->setText(QApplication::translate("MainWindow", "Send Parcel", nullptr));
-        pushButton_26->setText(QApplication::translate("MainWindow", "Join as a transporter", nullptr));
-        pushButton_27->setText(QApplication::translate("MainWindow", "Admin Panel", nullptr));
+        logo->setText(QString());
+        Btn_sendParcel->setText(QApplication::translate("MainWindow", "Send Parcel", nullptr));
+        Btn_deliveryMan->setText(QApplication::translate("MainWindow", "Join as a transporter", nullptr));
+        Btn_admin->setText(QApplication::translate("MainWindow", "Admin Panel", nullptr));
         label_31->setText(QString());
         label_33->setText(QString());
         label_43->setText(QString());
@@ -1938,6 +1957,7 @@ public:
         signupBtn->setText(QApplication::translate("MainWindow", "Sign up", nullptr));
         iconSignup->setText(QString());
         signupLabel->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\">Sign up</span></p></body></html>", nullptr));
+        pushButton_11->setText(QString());
         userLineEdit_3->setText(QString());
         userLineEdit_3->setPlaceholderText(QApplication::translate("MainWindow", "username", nullptr));
         passLineEdit_2->setPlaceholderText(QApplication::translate("MainWindow", "password", nullptr));
@@ -2049,7 +2069,6 @@ public:
         label_3->setText(QString());
         joinDelivery->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; font-weight:600;\">Join as a delivery man</span></p></body></html>", nullptr));
         pushButton_3->setText(QString());
-        pushButton_12->setText(QString());
     } // retranslateUi
 
 };
