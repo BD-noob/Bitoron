@@ -79,7 +79,8 @@ public:
     QPushButton *signupBtn;
     QLabel *iconSignup;
     QLabel *signupLabel;
-    QPushButton *pushButton_11;
+    QPushButton *logoBtn;
+    QPushButton *backBtn_2;
     QWidget *userSignInUp;
     QWidget *signinSection_2;
     QLineEdit *userLineEdit_3;
@@ -103,6 +104,8 @@ public:
     QPushButton *signupBtn_2;
     QLabel *iconSignup_2;
     QLabel *signupLabel_2;
+    QPushButton *backBtn_3;
+    QPushButton *logoBtn_2;
     QWidget *adminSignInUp;
     QWidget *signinSection_3;
     QLineEdit *userLineEdit_5;
@@ -126,6 +129,8 @@ public:
     QLabel *iconSignup_3;
     QLabel *signupLabel_3;
     QWidget *widget_16;
+    QPushButton *logoBtn_3;
+    QPushButton *backBtn_4;
     QWidget *userPanel;
     QWidget *widget;
     QPushButton *pushButton_9;
@@ -672,20 +677,34 @@ public:
         signupLabel->setGeometry(QRect(70, 10, 61, 31));
         signupLabel->setFont(font8);
         signupLabel->setStyleSheet(QString::fromUtf8("font: 14pt \"Lucida Sans\";"));
-        pushButton_11 = new QPushButton(deliverySignInUp);
-        pushButton_11->setObjectName(QString::fromUtf8("pushButton_11"));
-        pushButton_11->setGeometry(QRect(10, 10, 75, 51));
-        pushButton_11->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_11->setStyleSheet(QString::fromUtf8("border: none;"));
+        logoBtn = new QPushButton(deliverySignInUp);
+        logoBtn->setObjectName(QString::fromUtf8("logoBtn"));
+        logoBtn->setGeometry(QRect(10, 10, 75, 51));
+        logoBtn->setCursor(QCursor(Qt::PointingHandCursor));
+        logoBtn->setStyleSheet(QString::fromUtf8("border: none;"));
         QIcon icon3;
         icon3.addFile(QString::fromUtf8(":/res/logos/bitoron-website-favicon-color.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_11->setIcon(icon3);
-        pushButton_11->setIconSize(QSize(60, 60));
+        logoBtn->setIcon(icon3);
+        logoBtn->setIconSize(QSize(60, 60));
+        backBtn_2 = new QPushButton(deliverySignInUp);
+        backBtn_2->setObjectName(QString::fromUtf8("backBtn_2"));
+        backBtn_2->setGeometry(QRect(460, 600, 81, 31));
+        QFont font9;
+        font9.setFamily(QString::fromUtf8("Lucida Sans"));
+        font9.setPointSize(14);
+        font9.setBold(false);
+        font9.setWeight(50);
+        backBtn_2->setFont(font9);
+        backBtn_2->setCursor(QCursor(Qt::PointingHandCursor));
+        backBtn_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"border: none;"));
+        backBtn_2->setIconSize(QSize(60, 60));
         container->addWidget(deliverySignInUp);
         widget_8->raise();
         signupSection->raise();
         signinSection->raise();
-        pushButton_11->raise();
+        logoBtn->raise();
+        backBtn_2->raise();
         userSignInUp = new QWidget();
         userSignInUp->setObjectName(QString::fromUtf8("userSignInUp"));
         signinSection_2 = new QWidget(userSignInUp);
@@ -874,10 +893,27 @@ public:
         signupLabel_2->setGeometry(QRect(70, 10, 61, 31));
         signupLabel_2->setFont(font8);
         signupLabel_2->setStyleSheet(QString::fromUtf8("font: 14pt \"Lucida Sans\";"));
+        backBtn_3 = new QPushButton(userSignInUp);
+        backBtn_3->setObjectName(QString::fromUtf8("backBtn_3"));
+        backBtn_3->setGeometry(QRect(460, 600, 81, 31));
+        backBtn_3->setFont(font9);
+        backBtn_3->setCursor(QCursor(Qt::PointingHandCursor));
+        backBtn_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"border: none;"));
+        backBtn_3->setIconSize(QSize(60, 60));
+        logoBtn_2 = new QPushButton(userSignInUp);
+        logoBtn_2->setObjectName(QString::fromUtf8("logoBtn_2"));
+        logoBtn_2->setGeometry(QRect(10, 10, 75, 51));
+        logoBtn_2->setCursor(QCursor(Qt::PointingHandCursor));
+        logoBtn_2->setStyleSheet(QString::fromUtf8("border: none;"));
+        logoBtn_2->setIcon(icon3);
+        logoBtn_2->setIconSize(QSize(60, 60));
         container->addWidget(userSignInUp);
         widget_12->raise();
         signinSection_2->raise();
         signupSection_2->raise();
+        backBtn_3->raise();
+        logoBtn_2->raise();
         adminSignInUp = new QWidget();
         adminSignInUp->setObjectName(QString::fromUtf8("adminSignInUp"));
         signinSection_3 = new QWidget(adminSignInUp);
@@ -1066,10 +1102,27 @@ public:
         widget_16->setObjectName(QString::fromUtf8("widget_16"));
         widget_16->setGeometry(QRect(0, 0, 1001, 701));
         widget_16->setStyleSheet(QString::fromUtf8("border-image: url(:/res/images/bgnavbar1.jpg);"));
+        logoBtn_3 = new QPushButton(adminSignInUp);
+        logoBtn_3->setObjectName(QString::fromUtf8("logoBtn_3"));
+        logoBtn_3->setGeometry(QRect(10, 10, 75, 51));
+        logoBtn_3->setCursor(QCursor(Qt::PointingHandCursor));
+        logoBtn_3->setStyleSheet(QString::fromUtf8("border: none;"));
+        logoBtn_3->setIcon(icon3);
+        logoBtn_3->setIconSize(QSize(60, 60));
+        backBtn_4 = new QPushButton(adminSignInUp);
+        backBtn_4->setObjectName(QString::fromUtf8("backBtn_4"));
+        backBtn_4->setGeometry(QRect(460, 600, 81, 31));
+        backBtn_4->setFont(font9);
+        backBtn_4->setCursor(QCursor(Qt::PointingHandCursor));
+        backBtn_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"border: none;"));
+        backBtn_4->setIconSize(QSize(60, 60));
         container->addWidget(adminSignInUp);
         widget_16->raise();
         signinSection_3->raise();
         signupSection_3->raise();
+        logoBtn_3->raise();
+        backBtn_4->raise();
         userPanel = new QWidget();
         userPanel->setObjectName(QString::fromUtf8("userPanel"));
         widget = new QWidget(userPanel);
@@ -1848,13 +1901,13 @@ public:
         pushButton = new QPushButton(frame_2);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setMinimumSize(QSize(0, 0));
-        QFont font9;
-        font9.setFamily(QString::fromUtf8("Lucida Sans"));
-        font9.setPointSize(22);
-        font9.setBold(false);
-        font9.setItalic(false);
-        font9.setWeight(50);
-        pushButton->setFont(font9);
+        QFont font10;
+        font10.setFamily(QString::fromUtf8("Lucida Sans"));
+        font10.setPointSize(22);
+        font10.setBold(false);
+        font10.setItalic(false);
+        font10.setWeight(50);
+        pushButton->setFont(font10);
         pushButton->setCursor(QCursor(Qt::PointingHandCursor));
         pushButton->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/arrow-right-circle.svg);\n"
 "font: 22pt \"Lucida Sans\";"));
@@ -1914,7 +1967,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        container->setCurrentIndex(0);
+        container->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -1957,7 +2010,8 @@ public:
         signupBtn->setText(QApplication::translate("MainWindow", "Sign up", nullptr));
         iconSignup->setText(QString());
         signupLabel->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\">Sign up</span></p></body></html>", nullptr));
-        pushButton_11->setText(QString());
+        logoBtn->setText(QString());
+        backBtn_2->setText(QApplication::translate("MainWindow", "Back", nullptr));
         userLineEdit_3->setText(QString());
         userLineEdit_3->setPlaceholderText(QApplication::translate("MainWindow", "username", nullptr));
         passLineEdit_2->setPlaceholderText(QApplication::translate("MainWindow", "password", nullptr));
@@ -1976,6 +2030,8 @@ public:
         signupBtn_2->setText(QApplication::translate("MainWindow", "Sign up", nullptr));
         iconSignup_2->setText(QString());
         signupLabel_2->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\">Sign up</span></p></body></html>", nullptr));
+        backBtn_3->setText(QApplication::translate("MainWindow", "Back", nullptr));
+        logoBtn_2->setText(QString());
         userLineEdit_5->setText(QString());
         userLineEdit_5->setPlaceholderText(QApplication::translate("MainWindow", "username", nullptr));
         passLineEdit_3->setPlaceholderText(QApplication::translate("MainWindow", "password", nullptr));
@@ -1994,6 +2050,8 @@ public:
         signupBtn_3->setText(QApplication::translate("MainWindow", "Sign up", nullptr));
         iconSignup_3->setText(QString());
         signupLabel_3->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\">Sign up</span></p></body></html>", nullptr));
+        logoBtn_3->setText(QString());
+        backBtn_4->setText(QApplication::translate("MainWindow", "Back", nullptr));
         pushButton_9->setText(QString());
         pushButton_10->setText(QString());
         label_18->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:28pt; font-weight:600; color:#ce240e;\">Your Parcel, Our Responsibility</span></p></body></html>", nullptr));

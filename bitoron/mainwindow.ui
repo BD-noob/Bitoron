@@ -27,7 +27,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="homePg">
      <property name="minimumSize">
@@ -1206,7 +1206,7 @@ border-bottom: 2px solid white;</string>
        </property>
       </widget>
      </widget>
-     <widget class="QPushButton" name="pushButton_11">
+     <widget class="QPushButton" name="logoBtn">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -1235,10 +1235,45 @@ border-bottom: 2px solid white;</string>
        </size>
       </property>
      </widget>
+     <widget class="QPushButton" name="backBtn_2">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>600</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans</family>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border: none;</string>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+     </widget>
      <zorder>widget_8</zorder>
      <zorder>signupSection</zorder>
      <zorder>signinSection</zorder>
-     <zorder>pushButton_11</zorder>
+     <zorder>logoBtn</zorder>
+     <zorder>backBtn_2</zorder>
     </widget>
     <widget class="QWidget" name="userSignInUp">
      <widget class="QWidget" name="signinSection_2" native="true">
@@ -1941,9 +1976,74 @@ border-bottom: 2px solid white;</string>
        </property>
       </widget>
      </widget>
+     <widget class="QPushButton" name="backBtn_3">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>600</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans</family>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border: none;</string>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="logoBtn_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>75</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="bitoronImages.qrc">
+        <normaloff>:/res/logos/bitoron-website-favicon-color.png</normaloff>:/res/logos/bitoron-website-favicon-color.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+     </widget>
      <zorder>widget_12</zorder>
      <zorder>signinSection_2</zorder>
      <zorder>signupSection_2</zorder>
+     <zorder>backBtn_3</zorder>
+     <zorder>logoBtn_2</zorder>
     </widget>
     <widget class="QWidget" name="adminSignInUp">
      <widget class="QWidget" name="signinSection_3" native="true">
@@ -2646,9 +2746,74 @@ border-bottom: 2px solid white;</string>
        <string notr="true">border-image: url(:/res/images/bgnavbar1.jpg);</string>
       </property>
      </widget>
+     <widget class="QPushButton" name="logoBtn_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>75</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="bitoronImages.qrc">
+        <normaloff>:/res/logos/bitoron-website-favicon-color.png</normaloff>:/res/logos/bitoron-website-favicon-color.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backBtn_4">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>600</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Sans</family>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border: none;</string>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>60</width>
+        <height>60</height>
+       </size>
+      </property>
+     </widget>
      <zorder>widget_16</zorder>
      <zorder>signinSection_3</zorder>
      <zorder>signupSection_3</zorder>
+     <zorder>logoBtn_3</zorder>
+     <zorder>backBtn_4</zorder>
     </widget>
     <widget class="QWidget" name="userPanel">
      <widget class="QWidget" name="widget" native="true">
