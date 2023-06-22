@@ -28,6 +28,18 @@ private slots:
 
     void on_Btn_admin_clicked();
 
+    void on_logoBtn_clicked();
+
+    void on_backBtn_2_clicked();
+
+    void on_backBtn_3_clicked();
+
+    void on_logoBtn_2_clicked();
+
+    void on_logoBtn_3_clicked();
+
+    void on_backBtn_4_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
