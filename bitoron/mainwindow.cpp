@@ -13,7 +13,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
 void MainWindow::on_Btn_signin_clicked()
 {
     ui->container->setCurrentIndex(2);  //stackedWidget is renamed as container

@@ -47,7 +47,7 @@ public:
     QWidget *widget_9;
     QPushButton *logo;
     QWidget *middleSection;
-    QWidget *layoutWidget1;
+    QWidget *layoutWidget_2;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *Btn_sendParcel;
     QPushButton *Btn_deliveryMan;
@@ -133,92 +133,92 @@ public:
     QPushButton *backBtn_4;
     QWidget *userPanel;
     QWidget *widget;
-    QPushButton *pushButton_9;
-    QPushButton *pushButton_10;
-    QLabel *label_18;
+    QPushButton *back_Btn;
+    QPushButton *home_Btn;
+    QLabel *label_Headline;
+    QPushButton *myparcel_Btn_2;
+    QPushButton *logout_Btn_3;
     QWidget *widget_2;
     QWidget *widget_6;
     QWidget *widget_17;
     QLabel *label_4;
-    QLabel *label_5;
-    QPushButton *pushButton_7;
-    QPushButton *pushButton_4;
-    QPushButton *pushButton_6;
+    QLabel *label_Document;
+    QPushButton *Package;
+    QPushButton *Document;
+    QPushButton *Electronic;
     QFrame *line;
-    QPushButton *pushButton_5;
+    QPushButton *Gift;
     QLabel *label_6;
     QLabel *label_7;
     QLabel *label_8;
-    QLabel *label_9;
-    QLabel *label_10;
-    QLabel *label_11;
-    QLabel *label_12;
+    QLabel *label_Gift;
+    QLabel *label_Electronics;
+    QLabel *label_package;
+    QLabel *label_Pick;
     QLineEdit *lineEdit;
-    QLabel *label_13;
+    QLabel *label_Destination;
     QLineEdit *lineEdit_2;
-    QLabel *label_14;
-    QLabel *label_15;
-    QLabel *label_16;
+    QLabel *label_Name;
+    QLabel *label_mobile;
+    QLabel *label_Address;
     QLineEdit *lineEdit_3;
     QLineEdit *lineEdit_4;
     QLineEdit *lineEdit_5;
-    QPushButton *pushButton_8;
-    QLabel *label_17;
+    QPushButton *confirm_Btn;
+    QLabel *label_Sendparcel;
     QWidget *widget_19;
     QLabel *label_19;
     QLabel *label_20;
-    QLabel *label_21;
-    QLabel *label_22;
-    QLabel *label_23;
+    QLabel *github;
+    QLabel *facebook;
+    QLabel *twitter;
     QWidget *userPanel2;
     QWidget *body;
     QWidget *left;
     QWidget *right;
-    QLabel *label_25;
+    QLabel *label_ParcelType;
     QFrame *line_2;
     QLabel *label_32;
     QLabel *label_34;
     QLabel *label_35;
     QLabel *label_36;
     QLabel *label_37;
-    QLabel *label_38;
-    QLabel *label_39;
-    QLabel *label_40;
+    QLabel *label_Price;
+    QLabel *label_Name_2;
+    QLabel *label_Mobile_2;
     QLabel *label_41;
     QLabel *label_42;
     QLabel *label_24;
     QWidget *footer_2;
-    QLabel *label_26;
-    QLabel *label_28;
-    QLabel *label_29;
-    QLabel *label_30;
+    QLabel *label_Thanks;
+    QLabel *github_2;
+    QLabel *facebook_2;
+    QLabel *twitter_2;
     QWidget *header;
     QPushButton *backBtn;
     QPushButton *homeBtn;
     QLabel *label_44;
     QPushButton *logoutBtn;
     QWidget *adminPanel;
-    QFrame *frame;
-    QPushButton *pushButton_13;
-    QPushButton *pushButton_14;
-    QPushButton *pushButton_15;
-    QLabel *label_47;
-    QPushButton *pushButton_16;
-    QLabel *label_48;
     QWidget *widget_24;
-    QPushButton *pushButton_17;
-    QPushButton *pushButton_18;
-    QPushButton *pushButton_19;
-    QPushButton *pushButton_20;
-    QPushButton *pushButton_21;
-    QPushButton *pushButton_22;
-    QPushButton *pushButton_23;
-    QPushButton *pushButton_24;
-    QLabel *label_49;
-    QLabel *label_45;
-    QLabel *label_46;
-    QLabel *label_50;
-    QPushButton *pushButton_25;
+    QLabel *label_51;
+    QLabel *label_52;
+    QLabel *label_53;
+    QLabel *label_54;
+    QLabel *label_55;
+    QLabel *label_Parceltype;
+    QLabel *label_pick;
+    QLabel *label_destination;
+    QLineEdit *lineEdit_price;
+    QLineEdit *lineEdit_transporter;
+    QPushButton *proceed_Btn;
+    QFrame *line_3;
+    QLabel *label_56;
+    QLabel *label_totalusers;
+    QLabel *label_turnover;
+    QLabel *label_57;
+    QPushButton *logout_Btn_4;
+    QPushButton *back_Btn_2;
     QWidget *page;
     QFrame *frame_3;
     QVBoxLayout *verticalLayout_5;
@@ -340,15 +340,15 @@ public:
         font1.setKerning(true);
         middleSection->setFont(font1);
         middleSection->setStyleSheet(QString::fromUtf8("background-color: none;"));
-        layoutWidget1 = new QWidget(middleSection);
-        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
-        layoutWidget1->setGeometry(QRect(20, 20, 961, 321));
-        horizontalLayout_2 = new QHBoxLayout(layoutWidget1);
+        layoutWidget_2 = new QWidget(middleSection);
+        layoutWidget_2->setObjectName(QString::fromUtf8("layoutWidget_2"));
+        layoutWidget_2->setGeometry(QRect(20, 20, 961, 321));
+        horizontalLayout_2 = new QHBoxLayout(layoutWidget_2);
         horizontalLayout_2->setSpacing(40);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         horizontalLayout_2->setSizeConstraint(QLayout::SetDefaultConstraint);
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        Btn_sendParcel = new QPushButton(layoutWidget1);
+        Btn_sendParcel = new QPushButton(layoutWidget_2);
         Btn_sendParcel->setObjectName(QString::fromUtf8("Btn_sendParcel"));
         Btn_sendParcel->setMinimumSize(QSize(0, 319));
         QFont font2;
@@ -384,7 +384,7 @@ public:
 
         horizontalLayout_2->addWidget(Btn_sendParcel);
 
-        Btn_deliveryMan = new QPushButton(layoutWidget1);
+        Btn_deliveryMan = new QPushButton(layoutWidget_2);
         Btn_deliveryMan->setObjectName(QString::fromUtf8("Btn_deliveryMan"));
         Btn_deliveryMan->setMinimumSize(QSize(0, 319));
         Btn_deliveryMan->setFont(font2);
@@ -1129,23 +1129,39 @@ public:
         widget->setObjectName(QString::fromUtf8("widget"));
         widget->setGeometry(QRect(-1, -1, 1001, 131));
         widget->setStyleSheet(QString::fromUtf8("background-color: rgb(254, 247, 239);"));
-        pushButton_9 = new QPushButton(widget);
-        pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
-        pushButton_9->setGeometry(QRect(10, 10, 31, 31));
-        pushButton_9->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_9->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/dark Orange/arrow-left-circle.svg);\n"
+        back_Btn = new QPushButton(widget);
+        back_Btn->setObjectName(QString::fromUtf8("back_Btn"));
+        back_Btn->setGeometry(QRect(10, 10, 31, 31));
+        back_Btn->setCursor(QCursor(Qt::PointingHandCursor));
+        back_Btn->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/dark Orange/arrow-left-circle.svg);\n"
 "border:none;"));
-        pushButton_10 = new QPushButton(widget);
-        pushButton_10->setObjectName(QString::fromUtf8("pushButton_10"));
-        pushButton_10->setGeometry(QRect(50, 10, 31, 31));
-        pushButton_10->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_10->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/dark Orange/home.svg);\n"
+        home_Btn = new QPushButton(widget);
+        home_Btn->setObjectName(QString::fromUtf8("home_Btn"));
+        home_Btn->setGeometry(QRect(50, 10, 31, 31));
+        home_Btn->setCursor(QCursor(Qt::PointingHandCursor));
+        home_Btn->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/dark Orange/home.svg);\n"
 "border:none;\n"
 ""));
-        label_18 = new QLabel(widget);
-        label_18->setObjectName(QString::fromUtf8("label_18"));
-        label_18->setGeometry(QRect(290, 20, 401, 91));
-        label_18->setStyleSheet(QString::fromUtf8("font: 22pt \"Gabriola\";"));
+        label_Headline = new QLabel(widget);
+        label_Headline->setObjectName(QString::fromUtf8("label_Headline"));
+        label_Headline->setGeometry(QRect(290, 20, 401, 91));
+        label_Headline->setStyleSheet(QString::fromUtf8("font: 22pt \"Gabriola\";"));
+        myparcel_Btn_2 = new QPushButton(widget);
+        myparcel_Btn_2->setObjectName(QString::fromUtf8("myparcel_Btn_2"));
+        myparcel_Btn_2->setGeometry(QRect(820, 10, 91, 31));
+        myparcel_Btn_2->setCursor(QCursor(Qt::PointingHandCursor));
+        myparcel_Btn_2->setStyleSheet(QString::fromUtf8("color: rgb(206, 36, 14);\n"
+"font: 18pt \"Gabriola\";\n"
+"border:none;\n"
+""));
+        logout_Btn_3 = new QPushButton(widget);
+        logout_Btn_3->setObjectName(QString::fromUtf8("logout_Btn_3"));
+        logout_Btn_3->setGeometry(QRect(920, 10, 71, 31));
+        logout_Btn_3->setCursor(QCursor(Qt::PointingHandCursor));
+        logout_Btn_3->setStyleSheet(QString::fromUtf8("color: rgb(206, 36, 14);\n"
+"font: 18pt \"Gabriola\";\n"
+"border:none;\n"
+""));
         widget_2 = new QWidget(userPanel);
         widget_2->setObjectName(QString::fromUtf8("widget_2"));
         widget_2->setGeometry(QRect(0, 89, 1001, 441));
@@ -1163,16 +1179,16 @@ public:
         label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setGeometry(QRect(80, 80, 61, 41));
         label_4->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/dark Orange/file-text.svg);"));
-        label_5 = new QLabel(widget_17);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setGeometry(QRect(80, 120, 61, 31));
-        label_5->setStyleSheet(QString::fromUtf8("font: 8pt \"Lucida Sans\";"));
-        pushButton_7 = new QPushButton(widget_17);
-        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
-        pushButton_7->setGeometry(QRect(180, 70, 81, 81));
-        pushButton_7->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_7->setLayoutDirection(Qt::LeftToRight);
-        pushButton_7->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        label_Document = new QLabel(widget_17);
+        label_Document->setObjectName(QString::fromUtf8("label_Document"));
+        label_Document->setGeometry(QRect(80, 120, 61, 31));
+        label_Document->setStyleSheet(QString::fromUtf8("font: 8pt \"Lucida Sans\";"));
+        Package = new QPushButton(widget_17);
+        Package->setObjectName(QString::fromUtf8("Package"));
+        Package->setGeometry(QRect(180, 70, 81, 81));
+        Package->setCursor(QCursor(Qt::PointingHandCursor));
+        Package->setLayoutDirection(Qt::LeftToRight);
+        Package->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "background-color: rgba(254, 247, 239,0.6);\n"
 "border-radius:7px;\n"
@@ -1187,14 +1203,14 @@ public:
 "background-color:none;\n"
 "}\n"
 ""));
-        pushButton_7->setIconSize(QSize(20, 20));
-        pushButton_4 = new QPushButton(widget_17);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        pushButton_4->setGeometry(QRect(70, 70, 81, 81));
-        pushButton_4->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_4->setFocusPolicy(Qt::StrongFocus);
-        pushButton_4->setLayoutDirection(Qt::LeftToRight);
-        pushButton_4->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        Package->setIconSize(QSize(20, 20));
+        Document = new QPushButton(widget_17);
+        Document->setObjectName(QString::fromUtf8("Document"));
+        Document->setGeometry(QRect(70, 70, 81, 81));
+        Document->setCursor(QCursor(Qt::PointingHandCursor));
+        Document->setFocusPolicy(Qt::StrongFocus);
+        Document->setLayoutDirection(Qt::LeftToRight);
+        Document->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "background-color: rgba(254, 247, 239,0.6);\n"
 "border-radius:7px;\n"
@@ -1209,13 +1225,13 @@ public:
 "background-color:none;\n"
 "}\n"
 ""));
-        pushButton_4->setIconSize(QSize(20, 20));
-        pushButton_6 = new QPushButton(widget_17);
-        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
-        pushButton_6->setGeometry(QRect(290, 70, 81, 81));
-        pushButton_6->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_6->setLayoutDirection(Qt::LeftToRight);
-        pushButton_6->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        Document->setIconSize(QSize(20, 20));
+        Electronic = new QPushButton(widget_17);
+        Electronic->setObjectName(QString::fromUtf8("Electronic"));
+        Electronic->setGeometry(QRect(290, 70, 81, 81));
+        Electronic->setCursor(QCursor(Qt::PointingHandCursor));
+        Electronic->setLayoutDirection(Qt::LeftToRight);
+        Electronic->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "background-color: rgba(254, 247, 239,0.6);\n"
 "border-radius:7px;\n"
@@ -1230,19 +1246,19 @@ public:
 "background-color:none;\n"
 "}\n"
 ""));
-        pushButton_6->setIconSize(QSize(20, 20));
+        Electronic->setIconSize(QSize(20, 20));
         line = new QFrame(widget_17);
         line->setObjectName(QString::fromUtf8("line"));
         line->setGeometry(QRect(-18, 158, 20, 101));
         line->setStyleSheet(QString::fromUtf8("background-color: rgb(206, 36, 14);"));
         line->setFrameShape(QFrame::VLine);
         line->setFrameShadow(QFrame::Sunken);
-        pushButton_5 = new QPushButton(widget_17);
-        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
-        pushButton_5->setGeometry(QRect(400, 70, 81, 81));
-        pushButton_5->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_5->setLayoutDirection(Qt::LeftToRight);
-        pushButton_5->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        Gift = new QPushButton(widget_17);
+        Gift->setObjectName(QString::fromUtf8("Gift"));
+        Gift->setGeometry(QRect(400, 70, 81, 81));
+        Gift->setCursor(QCursor(Qt::PointingHandCursor));
+        Gift->setLayoutDirection(Qt::LeftToRight);
+        Gift->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "background-color: rgba(254, 247, 239,0.6);\n"
 "border-radius:7px;\n"
@@ -1257,7 +1273,7 @@ public:
 "background-color:none;\n"
 "}\n"
 ""));
-        pushButton_5->setIconSize(QSize(20, 20));
+        Gift->setIconSize(QSize(20, 20));
         label_6 = new QLabel(widget_17);
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setGeometry(QRect(300, 80, 61, 41));
@@ -1270,22 +1286,22 @@ public:
         label_8->setObjectName(QString::fromUtf8("label_8"));
         label_8->setGeometry(QRect(190, 80, 61, 41));
         label_8->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/dark Orange/package.svg);"));
-        label_9 = new QLabel(widget_17);
-        label_9->setObjectName(QString::fromUtf8("label_9"));
-        label_9->setGeometry(QRect(410, 120, 61, 31));
-        label_9->setStyleSheet(QString::fromUtf8("font: 8pt \"Lucida Sans\";"));
-        label_10 = new QLabel(widget_17);
-        label_10->setObjectName(QString::fromUtf8("label_10"));
-        label_10->setGeometry(QRect(300, 120, 61, 31));
-        label_10->setStyleSheet(QString::fromUtf8("font: 8pt \"Lucida Sans\";"));
-        label_11 = new QLabel(widget_17);
-        label_11->setObjectName(QString::fromUtf8("label_11"));
-        label_11->setGeometry(QRect(190, 120, 61, 31));
-        label_11->setStyleSheet(QString::fromUtf8("font: 8pt \"Lucida Sans\";"));
-        label_12 = new QLabel(widget_17);
-        label_12->setObjectName(QString::fromUtf8("label_12"));
-        label_12->setGeometry(QRect(50, 190, 91, 16));
-        label_12->setStyleSheet(QString::fromUtf8("font: 10pt \"Lucida Sans\";\n"
+        label_Gift = new QLabel(widget_17);
+        label_Gift->setObjectName(QString::fromUtf8("label_Gift"));
+        label_Gift->setGeometry(QRect(410, 120, 61, 31));
+        label_Gift->setStyleSheet(QString::fromUtf8("font: 8pt \"Lucida Sans\";"));
+        label_Electronics = new QLabel(widget_17);
+        label_Electronics->setObjectName(QString::fromUtf8("label_Electronics"));
+        label_Electronics->setGeometry(QRect(300, 120, 61, 31));
+        label_Electronics->setStyleSheet(QString::fromUtf8("font: 8pt \"Lucida Sans\";"));
+        label_package = new QLabel(widget_17);
+        label_package->setObjectName(QString::fromUtf8("label_package"));
+        label_package->setGeometry(QRect(190, 120, 61, 31));
+        label_package->setStyleSheet(QString::fromUtf8("font: 8pt \"Lucida Sans\";"));
+        label_Pick = new QLabel(widget_17);
+        label_Pick->setObjectName(QString::fromUtf8("label_Pick"));
+        label_Pick->setGeometry(QRect(50, 190, 91, 16));
+        label_Pick->setStyleSheet(QString::fromUtf8("font: 10pt \"Lucida Sans\";\n"
 "color: rgb(206, 36, 14);"));
         lineEdit = new QLineEdit(widget_17);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
@@ -1297,10 +1313,10 @@ public:
 "}\n"
 "\n"
 ""));
-        label_13 = new QLabel(widget_17);
-        label_13->setObjectName(QString::fromUtf8("label_13"));
-        label_13->setGeometry(QRect(300, 190, 81, 16));
-        label_13->setStyleSheet(QString::fromUtf8("font: 10pt \"Lucida Sans\";\n"
+        label_Destination = new QLabel(widget_17);
+        label_Destination->setObjectName(QString::fromUtf8("label_Destination"));
+        label_Destination->setGeometry(QRect(300, 190, 81, 16));
+        label_Destination->setStyleSheet(QString::fromUtf8("font: 10pt \"Lucida Sans\";\n"
 "color: rgb(206, 36, 14);"));
         lineEdit_2 = new QLineEdit(widget_17);
         lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
@@ -1310,20 +1326,20 @@ public:
 "padding-left:3px;\n"
 "\n"
 ""));
-        label_14 = new QLabel(widget_17);
-        label_14->setObjectName(QString::fromUtf8("label_14"));
-        label_14->setGeometry(QRect(50, 250, 47, 13));
-        label_14->setStyleSheet(QString::fromUtf8("font: 10pt \"Lucida Sans\";\n"
+        label_Name = new QLabel(widget_17);
+        label_Name->setObjectName(QString::fromUtf8("label_Name"));
+        label_Name->setGeometry(QRect(50, 250, 47, 13));
+        label_Name->setStyleSheet(QString::fromUtf8("font: 10pt \"Lucida Sans\";\n"
 "color: rgb(206, 36, 14);"));
-        label_15 = new QLabel(widget_17);
-        label_15->setObjectName(QString::fromUtf8("label_15"));
-        label_15->setGeometry(QRect(300, 250, 47, 13));
-        label_15->setStyleSheet(QString::fromUtf8("font: 10pt \"Lucida Sans\";\n"
+        label_mobile = new QLabel(widget_17);
+        label_mobile->setObjectName(QString::fromUtf8("label_mobile"));
+        label_mobile->setGeometry(QRect(300, 250, 47, 13));
+        label_mobile->setStyleSheet(QString::fromUtf8("font: 10pt \"Lucida Sans\";\n"
 "color: rgb(206, 36, 14);"));
-        label_16 = new QLabel(widget_17);
-        label_16->setObjectName(QString::fromUtf8("label_16"));
-        label_16->setGeometry(QRect(50, 310, 47, 13));
-        label_16->setStyleSheet(QString::fromUtf8("font: 10pt \"Lucida Sans\";\n"
+        label_Address = new QLabel(widget_17);
+        label_Address->setObjectName(QString::fromUtf8("label_Address"));
+        label_Address->setGeometry(QRect(50, 310, 47, 13));
+        label_Address->setStyleSheet(QString::fromUtf8("font: 10pt \"Lucida Sans\";\n"
 "color: rgb(206, 36, 14);"));
         lineEdit_3 = new QLineEdit(widget_17);
         lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
@@ -1355,13 +1371,13 @@ public:
 "}\n"
 "\n"
 ""));
-        pushButton_8 = new QPushButton(widget_17);
-        pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
-        pushButton_8->setGeometry(QRect(50, 370, 75, 23));
-        pushButton_8->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_8->setFocusPolicy(Qt::StrongFocus);
-        pushButton_8->setLayoutDirection(Qt::LeftToRight);
-        pushButton_8->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        confirm_Btn = new QPushButton(widget_17);
+        confirm_Btn->setObjectName(QString::fromUtf8("confirm_Btn"));
+        confirm_Btn->setGeometry(QRect(50, 370, 75, 23));
+        confirm_Btn->setCursor(QCursor(Qt::PointingHandCursor));
+        confirm_Btn->setFocusPolicy(Qt::StrongFocus);
+        confirm_Btn->setLayoutDirection(Qt::LeftToRight);
+        confirm_Btn->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
 "font: 10pt \"Lucida Sans\";\n"
 "background-color: rgb(206, 36, 14);\n"
@@ -1375,35 +1391,35 @@ public:
 "color: rgb(206, 36, 14);\n"
 "border: 2px solid  rgb(206, 36, 14);\n"
 "}"));
-        label_17 = new QLabel(widget_17);
-        label_17->setObjectName(QString::fromUtf8("label_17"));
-        label_17->setGeometry(QRect(200, 0, 161, 61));
-        label_17->setStyleSheet(QString::fromUtf8("font: 22pt \"Gabriola\";"));
-        label_9->raise();
+        label_Sendparcel = new QLabel(widget_17);
+        label_Sendparcel->setObjectName(QString::fromUtf8("label_Sendparcel"));
+        label_Sendparcel->setGeometry(QRect(200, 0, 161, 61));
+        label_Sendparcel->setStyleSheet(QString::fromUtf8("font: 22pt \"Gabriola\";"));
+        label_Gift->raise();
         label_7->raise();
-        label_10->raise();
+        label_Electronics->raise();
         label_6->raise();
-        label_11->raise();
+        label_package->raise();
         label_8->raise();
         label_4->raise();
-        label_5->raise();
-        pushButton_7->raise();
-        pushButton_4->raise();
-        pushButton_6->raise();
+        label_Document->raise();
+        Package->raise();
+        Document->raise();
+        Electronic->raise();
         line->raise();
-        pushButton_5->raise();
-        label_12->raise();
+        Gift->raise();
+        label_Pick->raise();
         lineEdit->raise();
-        label_13->raise();
+        label_Destination->raise();
         lineEdit_2->raise();
-        label_14->raise();
-        label_15->raise();
-        label_16->raise();
+        label_Name->raise();
+        label_mobile->raise();
+        label_Address->raise();
         lineEdit_3->raise();
         lineEdit_4->raise();
         lineEdit_5->raise();
-        pushButton_8->raise();
-        label_17->raise();
+        confirm_Btn->raise();
+        label_Sendparcel->raise();
         widget_19 = new QWidget(userPanel);
         widget_19->setObjectName(QString::fromUtf8("widget_19"));
         widget_19->setGeometry(QRect(-1, 529, 1001, 171));
@@ -1417,21 +1433,21 @@ public:
         label_20->setGeometry(QRect(500, 20, 13, 13));
         label_20->setFont(font3);
         label_20->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/alert-circle.svg);"));
-        label_21 = new QLabel(widget_19);
-        label_21->setObjectName(QString::fromUtf8("label_21"));
-        label_21->setGeometry(QRect(20, 120, 21, 21));
-        label_21->setFont(font3);
-        label_21->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/github.svg);"));
-        label_22 = new QLabel(widget_19);
-        label_22->setObjectName(QString::fromUtf8("label_22"));
-        label_22->setGeometry(QRect(40, 120, 31, 21));
-        label_22->setFont(font3);
-        label_22->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/facebook.svg);"));
-        label_23 = new QLabel(widget_19);
-        label_23->setObjectName(QString::fromUtf8("label_23"));
-        label_23->setGeometry(QRect(70, 120, 21, 21));
-        label_23->setFont(font3);
-        label_23->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/twitter.svg);"));
+        github = new QLabel(widget_19);
+        github->setObjectName(QString::fromUtf8("github"));
+        github->setGeometry(QRect(470, 120, 21, 21));
+        github->setFont(font3);
+        github->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/github.svg);"));
+        facebook = new QLabel(widget_19);
+        facebook->setObjectName(QString::fromUtf8("facebook"));
+        facebook->setGeometry(QRect(490, 120, 31, 21));
+        facebook->setFont(font3);
+        facebook->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/facebook.svg);"));
+        twitter = new QLabel(widget_19);
+        twitter->setObjectName(QString::fromUtf8("twitter"));
+        twitter->setGeometry(QRect(520, 120, 21, 21));
+        twitter->setFont(font3);
+        twitter->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/twitter.svg);"));
         container->addWidget(userPanel);
         userPanel2 = new QWidget();
         userPanel2->setObjectName(QString::fromUtf8("userPanel2"));
@@ -1448,10 +1464,10 @@ public:
         right->setGeometry(QRect(449, -1, 551, 441));
         right->setStyleSheet(QString::fromUtf8("background-color: rgb(254, 254, 254);\n"
 ""));
-        label_25 = new QLabel(right);
-        label_25->setObjectName(QString::fromUtf8("label_25"));
-        label_25->setGeometry(QRect(230, 110, 101, 31));
-        label_25->setStyleSheet(QString::fromUtf8("font: 8pt \"Lucida Sans\";\n"
+        label_ParcelType = new QLabel(right);
+        label_ParcelType->setObjectName(QString::fromUtf8("label_ParcelType"));
+        label_ParcelType->setGeometry(QRect(230, 110, 101, 31));
+        label_ParcelType->setStyleSheet(QString::fromUtf8("font: 8pt \"Lucida Sans\";\n"
 "color: rgb(206, 36, 14);\n"
 "background-color:none;"));
         line_2 = new QFrame(right);
@@ -1484,26 +1500,26 @@ public:
         label_37->setObjectName(QString::fromUtf8("label_37"));
         label_37->setGeometry(QRect(200, 0, 161, 61));
         label_37->setStyleSheet(QString::fromUtf8("font: 22pt \"Gabriola\";"));
-        label_38 = new QLabel(right);
-        label_38->setObjectName(QString::fromUtf8("label_38"));
-        label_38->setGeometry(QRect(380, 300, 121, 21));
-        label_38->setStyleSheet(QString::fromUtf8("QLabel{\n"
+        label_Price = new QLabel(right);
+        label_Price->setObjectName(QString::fromUtf8("label_Price"));
+        label_Price->setGeometry(QRect(380, 300, 121, 21));
+        label_Price->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "border-bottom:2px solid  rgba(206, 36, 14, 0.7);\n"
 "background-color: rgba(206, 36, 14, 0.06);\n"
 "padding-left:3px;\n"
 "}"));
-        label_39 = new QLabel(right);
-        label_39->setObjectName(QString::fromUtf8("label_39"));
-        label_39->setGeometry(QRect(50, 240, 241, 21));
-        label_39->setStyleSheet(QString::fromUtf8("QLabel{\n"
+        label_Name_2 = new QLabel(right);
+        label_Name_2->setObjectName(QString::fromUtf8("label_Name_2"));
+        label_Name_2->setGeometry(QRect(50, 240, 241, 21));
+        label_Name_2->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "border-bottom:2px solid  rgba(206, 36, 14, 0.7);\n"
 "background-color: rgba(206, 36, 14, 0.06);\n"
 "padding-left:3px;\n"
 "}"));
-        label_40 = new QLabel(right);
-        label_40->setObjectName(QString::fromUtf8("label_40"));
-        label_40->setGeometry(QRect(50, 300, 241, 21));
-        label_40->setStyleSheet(QString::fromUtf8("QLabel{\n"
+        label_Mobile_2 = new QLabel(right);
+        label_Mobile_2->setObjectName(QString::fromUtf8("label_Mobile_2"));
+        label_Mobile_2->setGeometry(QRect(50, 300, 241, 21));
+        label_Mobile_2->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "border-bottom:2px solid  rgba(206, 36, 14, 0.7);\n"
 "background-color: rgba(206, 36, 14, 0.06);\n"
 "padding-left:3px;\n"
@@ -1534,26 +1550,26 @@ public:
         footer_2->setObjectName(QString::fromUtf8("footer_2"));
         footer_2->setGeometry(QRect(0, 550, 1001, 171));
         footer_2->setStyleSheet(QString::fromUtf8("background-color: rgb(211, 187, 179);"));
-        label_26 = new QLabel(footer_2);
-        label_26->setObjectName(QString::fromUtf8("label_26"));
-        label_26->setGeometry(QRect(290, 10, 421, 71));
-        label_26->setStyleSheet(QString::fromUtf8("font: 30pt \"Gabriola\";\n"
+        label_Thanks = new QLabel(footer_2);
+        label_Thanks->setObjectName(QString::fromUtf8("label_Thanks"));
+        label_Thanks->setGeometry(QRect(290, 10, 421, 71));
+        label_Thanks->setStyleSheet(QString::fromUtf8("font: 30pt \"Gabriola\";\n"
 "color: rgb(255, 255, 255);"));
-        label_28 = new QLabel(footer_2);
-        label_28->setObjectName(QString::fromUtf8("label_28"));
-        label_28->setGeometry(QRect(460, 120, 21, 21));
-        label_28->setFont(font3);
-        label_28->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/github.svg);"));
-        label_29 = new QLabel(footer_2);
-        label_29->setObjectName(QString::fromUtf8("label_29"));
-        label_29->setGeometry(QRect(480, 120, 31, 21));
-        label_29->setFont(font3);
-        label_29->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/facebook.svg);"));
-        label_30 = new QLabel(footer_2);
-        label_30->setObjectName(QString::fromUtf8("label_30"));
-        label_30->setGeometry(QRect(510, 120, 21, 21));
-        label_30->setFont(font3);
-        label_30->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/twitter.svg);"));
+        github_2 = new QLabel(footer_2);
+        github_2->setObjectName(QString::fromUtf8("github_2"));
+        github_2->setGeometry(QRect(460, 120, 21, 21));
+        github_2->setFont(font3);
+        github_2->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/github.svg);"));
+        facebook_2 = new QLabel(footer_2);
+        facebook_2->setObjectName(QString::fromUtf8("facebook_2"));
+        facebook_2->setGeometry(QRect(480, 120, 31, 21));
+        facebook_2->setFont(font3);
+        facebook_2->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/facebook.svg);"));
+        twitter_2 = new QLabel(footer_2);
+        twitter_2->setObjectName(QString::fromUtf8("twitter_2"));
+        twitter_2->setGeometry(QRect(510, 120, 21, 21));
+        twitter_2->setFont(font3);
+        twitter_2->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/twitter.svg);"));
         header = new QWidget(userPanel2);
         header->setObjectName(QString::fromUtf8("header"));
         header->setGeometry(QRect(0, 0, 1001, 111));
@@ -1587,255 +1603,118 @@ public:
         container->addWidget(userPanel2);
         adminPanel = new QWidget();
         adminPanel->setObjectName(QString::fromUtf8("adminPanel"));
-        frame = new QFrame(adminPanel);
-        frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(-1, -1, 131, 701));
-        frame->setStyleSheet(QString::fromUtf8("background-color: rgb(162, 246, 255);"));
-        frame->setFrameShape(QFrame::StyledPanel);
-        frame->setFrameShadow(QFrame::Raised);
-        pushButton_13 = new QPushButton(frame);
-        pushButton_13->setObjectName(QString::fromUtf8("pushButton_13"));
-        pushButton_13->setGeometry(QRect(50, 10, 31, 31));
-        pushButton_13->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_13->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/dark Orange/home.svg);\n"
-"border:none;\n"
-""));
-        pushButton_14 = new QPushButton(frame);
-        pushButton_14->setObjectName(QString::fromUtf8("pushButton_14"));
-        pushButton_14->setGeometry(QRect(10, 60, 21, 31));
-        pushButton_14->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_14->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/dark Orange/home.svg);\n"
-"border:none;\n"
-""));
-        pushButton_15 = new QPushButton(frame);
-        pushButton_15->setObjectName(QString::fromUtf8("pushButton_15"));
-        pushButton_15->setGeometry(QRect(10, 110, 21, 21));
-        pushButton_15->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_15->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/dark Orange/home.svg);\n"
-"border:none;\n"
-""));
-        label_47 = new QLabel(frame);
-        label_47->setObjectName(QString::fromUtf8("label_47"));
-        label_47->setGeometry(QRect(10, 60, 91, 31));
-        label_47->setStyleSheet(QString::fromUtf8("font: 15pt \"Gabriola\";"));
-        pushButton_16 = new QPushButton(frame);
-        pushButton_16->setObjectName(QString::fromUtf8("pushButton_16"));
-        pushButton_16->setGeometry(QRect(10, 10, 31, 31));
-        pushButton_16->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_16->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/dark Orange/home.svg);\n"
-"border:none;\n"
-""));
-        label_48 = new QLabel(frame);
-        label_48->setObjectName(QString::fromUtf8("label_48"));
-        label_48->setGeometry(QRect(40, 100, 91, 41));
-        label_48->setStyleSheet(QString::fromUtf8("font: 15pt \"Gabriola\";"));
         widget_24 = new QWidget(adminPanel);
         widget_24->setObjectName(QString::fromUtf8("widget_24"));
-        widget_24->setGeometry(QRect(129, -1, 871, 701));
+        widget_24->setGeometry(QRect(0, 0, 991, 701));
         widget_24->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-        pushButton_17 = new QPushButton(widget_24);
-        pushButton_17->setObjectName(QString::fromUtf8("pushButton_17"));
-        pushButton_17->setGeometry(QRect(40, 80, 81, 81));
-        pushButton_17->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_17->setFocusPolicy(Qt::StrongFocus);
-        pushButton_17->setLayoutDirection(Qt::LeftToRight);
-        pushButton_17->setStyleSheet(QString::fromUtf8("QPushButton\n"
+        label_51 = new QLabel(widget_24);
+        label_51->setObjectName(QString::fromUtf8("label_51"));
+        label_51->setGeometry(QRect(140, 80, 121, 31));
+        label_51->setStyleSheet(QString::fromUtf8("font: 15pt \"Gabriola\";"));
+        label_52 = new QLabel(widget_24);
+        label_52->setObjectName(QString::fromUtf8("label_52"));
+        label_52->setGeometry(QRect(160, 130, 101, 31));
+        label_52->setStyleSheet(QString::fromUtf8("font: 15pt \"Gabriola\";"));
+        label_53 = new QLabel(widget_24);
+        label_53->setObjectName(QString::fromUtf8("label_53"));
+        label_53->setGeometry(QRect(160, 310, 141, 31));
+        label_53->setStyleSheet(QString::fromUtf8("font: 15pt \"Gabriola\";"));
+        label_54 = new QLabel(widget_24);
+        label_54->setObjectName(QString::fromUtf8("label_54"));
+        label_54->setGeometry(QRect(160, 250, 101, 31));
+        label_54->setStyleSheet(QString::fromUtf8("font: 15pt \"Gabriola\";"));
+        label_55 = new QLabel(widget_24);
+        label_55->setObjectName(QString::fromUtf8("label_55"));
+        label_55->setGeometry(QRect(160, 190, 91, 31));
+        label_55->setStyleSheet(QString::fromUtf8("font: 15pt \"Gabriola\";"));
+        label_Parceltype = new QLabel(widget_24);
+        label_Parceltype->setObjectName(QString::fromUtf8("label_Parceltype"));
+        label_Parceltype->setGeometry(QRect(270, 80, 91, 31));
+        label_Parceltype->setStyleSheet(QString::fromUtf8("font: 15pt \"Gabriola\";"));
+        label_pick = new QLabel(widget_24);
+        label_pick->setObjectName(QString::fromUtf8("label_pick"));
+        label_pick->setGeometry(QRect(270, 130, 91, 31));
+        label_pick->setStyleSheet(QString::fromUtf8("font: 15pt \"Gabriola\";"));
+        label_destination = new QLabel(widget_24);
+        label_destination->setObjectName(QString::fromUtf8("label_destination"));
+        label_destination->setGeometry(QRect(270, 190, 91, 31));
+        label_destination->setStyleSheet(QString::fromUtf8("font: 15pt \"Gabriola\";"));
+        lineEdit_price = new QLineEdit(widget_24);
+        lineEdit_price->setObjectName(QString::fromUtf8("lineEdit_price"));
+        lineEdit_price->setGeometry(QRect(300, 260, 111, 20));
+        lineEdit_price->setStyleSheet(QString::fromUtf8("border: none;\n"
+"background-color: rgba(206, 36, 14, 0.06);\n"
+"padding-left:3px;"));
+        lineEdit_transporter = new QLineEdit(widget_24);
+        lineEdit_transporter->setObjectName(QString::fromUtf8("lineEdit_transporter"));
+        lineEdit_transporter->setGeometry(QRect(310, 320, 211, 20));
+        lineEdit_transporter->setStyleSheet(QString::fromUtf8("border: none;\n"
+"background-color: rgba(206, 36, 14, 0.06);\n"
+"padding-left:3px;"));
+        proceed_Btn = new QPushButton(widget_24);
+        proceed_Btn->setObjectName(QString::fromUtf8("proceed_Btn"));
+        proceed_Btn->setGeometry(QRect(160, 360, 75, 23));
+        proceed_Btn->setCursor(QCursor(Qt::PointingHandCursor));
+        proceed_Btn->setFocusPolicy(Qt::StrongFocus);
+        proceed_Btn->setLayoutDirection(Qt::LeftToRight);
+        proceed_Btn->setStyleSheet(QString::fromUtf8("QPushButton\n"
 "{\n"
-"background-color: rgba(254, 247, 239,0.6);\n"
-"border-radius:7px;\n"
-"border: 5px solid rgb(254, 247, 239);\n"
+"font: 10pt \"Lucida Sans\";\n"
+"background-color: rgb(206, 36, 14);\n"
+"color: white;\n"
+"\n"
 "}\n"
-"QPushButton:focus\n"
-"{\n"
-"background-color:none;\n"
-"}\n"
-"QPushButton:Hover::after\n"
-"{\n"
-"background-color:none;\n"
-"}\n"
-""));
-        pushButton_17->setIconSize(QSize(20, 20));
-        pushButton_18 = new QPushButton(widget_24);
-        pushButton_18->setObjectName(QString::fromUtf8("pushButton_18"));
-        pushButton_18->setGeometry(QRect(160, 80, 81, 81));
-        pushButton_18->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_18->setFocusPolicy(Qt::StrongFocus);
-        pushButton_18->setLayoutDirection(Qt::LeftToRight);
-        pushButton_18->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"background-color: rgba(254, 247, 239,0.6);\n"
-"border-radius:7px;\n"
-"border: 5px solid rgb(254, 247, 239);\n"
-"}\n"
-"QPushButton:focus\n"
-"{\n"
-"background-color:none;\n"
-"}\n"
+"\n"
 "QPushButton:Hover\n"
 "{\n"
-"background-color:none;\n"
-"}\n"
-""));
-        pushButton_18->setIconSize(QSize(20, 20));
-        pushButton_19 = new QPushButton(widget_24);
-        pushButton_19->setObjectName(QString::fromUtf8("pushButton_19"));
-        pushButton_19->setGeometry(QRect(280, 80, 81, 81));
-        pushButton_19->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_19->setFocusPolicy(Qt::StrongFocus);
-        pushButton_19->setLayoutDirection(Qt::LeftToRight);
-        pushButton_19->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"background-color: rgba(254, 247, 239,0.6);\n"
-"border-radius:7px;\n"
-"border: 5px solid rgb(254, 247, 239);\n"
-"}\n"
-"QPushButton:focus\n"
-"{\n"
-"background-color:none;\n"
-"}\n"
-"QPushButton:Hover\n"
-"{\n"
-"background-color:none;\n"
-"}\n"
-""));
-        pushButton_19->setIconSize(QSize(20, 20));
-        pushButton_20 = new QPushButton(widget_24);
-        pushButton_20->setObjectName(QString::fromUtf8("pushButton_20"));
-        pushButton_20->setGeometry(QRect(400, 80, 81, 81));
-        pushButton_20->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_20->setFocusPolicy(Qt::StrongFocus);
-        pushButton_20->setLayoutDirection(Qt::LeftToRight);
-        pushButton_20->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"background-color: rgba(254, 247, 239,0.6);\n"
-"border-radius:7px;\n"
-"border: 5px solid rgb(254, 247, 239);\n"
-"}\n"
-"QPushButton:focus\n"
-"{\n"
-"background-color:none;\n"
-"}\n"
-"QPushButton:Hover\n"
-"{\n"
-"background-color:none;\n"
-"}\n"
-""));
-        pushButton_20->setIconSize(QSize(20, 20));
-        pushButton_21 = new QPushButton(widget_24);
-        pushButton_21->setObjectName(QString::fromUtf8("pushButton_21"));
-        pushButton_21->setGeometry(QRect(520, 80, 81, 81));
-        pushButton_21->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_21->setFocusPolicy(Qt::StrongFocus);
-        pushButton_21->setLayoutDirection(Qt::LeftToRight);
-        pushButton_21->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"background-color: rgba(254, 247, 239,0.6);\n"
-"border-radius:7px;\n"
-"border: 5px solid rgb(254, 247, 239);\n"
-"}\n"
-"QPushButton:focus\n"
-"{\n"
-"background-color:none;\n"
-"}\n"
-"QPushButton:Hover\n"
-"{\n"
-"background-color:none;\n"
-"}\n"
-""));
-        pushButton_21->setIconSize(QSize(20, 20));
-        pushButton_22 = new QPushButton(widget_24);
-        pushButton_22->setObjectName(QString::fromUtf8("pushButton_22"));
-        pushButton_22->setGeometry(QRect(640, 80, 81, 81));
-        pushButton_22->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_22->setFocusPolicy(Qt::StrongFocus);
-        pushButton_22->setLayoutDirection(Qt::LeftToRight);
-        pushButton_22->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"background-color: rgba(254, 247, 239,0.6);\n"
-"border-radius:7px;\n"
-"border: 5px solid rgb(254, 247, 239);\n"
-"}\n"
-"QPushButton:focus\n"
-"{\n"
-"background-color:none;\n"
-"}\n"
-"QPushButton:Hover\n"
-"{\n"
-"background-color:none;\n"
-"}\n"
-""));
-        pushButton_22->setIconSize(QSize(20, 20));
-        pushButton_23 = new QPushButton(widget_24);
-        pushButton_23->setObjectName(QString::fromUtf8("pushButton_23"));
-        pushButton_23->setGeometry(QRect(760, 80, 81, 81));
-        pushButton_23->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_23->setFocusPolicy(Qt::StrongFocus);
-        pushButton_23->setLayoutDirection(Qt::LeftToRight);
-        pushButton_23->setStyleSheet(QString::fromUtf8("QPushButton\n"
-"{\n"
-"background-color: rgba(254, 247, 239,0.6);\n"
-"border-radius:7px;\n"
-"border: 5px solid rgb(254, 247, 239);\n"
-"}\n"
-"QPushButton:focus\n"
-"{\n"
-"background-color:none;\n"
-"}\n"
-"QPushButton:Hover\n"
-"{\n"
-"background-color:none;\n"
-"}\n"
-""));
-        pushButton_23->setIconSize(QSize(20, 20));
-        pushButton_24 = new QPushButton(widget_24);
-        pushButton_24->setObjectName(QString::fromUtf8("pushButton_24"));
-        pushButton_24->setGeometry(QRect(820, 10, 31, 31));
-        pushButton_24->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_24->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/dark Orange/home.svg);\n"
+"background-color: white;\n"
+"color: rgb(206, 36, 14);\n"
+"border: 2px solid  rgb(206, 36, 14);\n"
+"}"));
+        line_3 = new QFrame(widget_24);
+        line_3->setObjectName(QString::fromUtf8("line_3"));
+        line_3->setGeometry(QRect(720, 80, 3, 331));
+        line_3->setStyleSheet(QString::fromUtf8("background-color: rgb(206, 36, 14);"));
+        line_3->setFrameShape(QFrame::VLine);
+        line_3->setFrameShadow(QFrame::Sunken);
+        label_56 = new QLabel(widget_24);
+        label_56->setObjectName(QString::fromUtf8("label_56"));
+        label_56->setGeometry(QRect(790, 80, 121, 31));
+        label_56->setStyleSheet(QString::fromUtf8("font: 15pt \"Gabriola\";"));
+        label_totalusers = new QLabel(widget_24);
+        label_totalusers->setObjectName(QString::fromUtf8("label_totalusers"));
+        label_totalusers->setGeometry(QRect(810, 110, 91, 31));
+        label_totalusers->setStyleSheet(QString::fromUtf8("font: 15pt \"Gabriola\";"));
+        label_turnover = new QLabel(widget_24);
+        label_turnover->setObjectName(QString::fromUtf8("label_turnover"));
+        label_turnover->setGeometry(QRect(810, 190, 91, 31));
+        label_turnover->setStyleSheet(QString::fromUtf8("font: 15pt \"Gabriola\";"));
+        label_57 = new QLabel(widget_24);
+        label_57->setObjectName(QString::fromUtf8("label_57"));
+        label_57->setGeometry(QRect(800, 160, 121, 31));
+        label_57->setStyleSheet(QString::fromUtf8("font: 15pt \"Gabriola\";"));
+        logout_Btn_4 = new QPushButton(widget_24);
+        logout_Btn_4->setObjectName(QString::fromUtf8("logout_Btn_4"));
+        logout_Btn_4->setGeometry(QRect(900, 10, 71, 31));
+        QFont font10;
+        font10.setFamily(QString::fromUtf8("Gabriola"));
+        font10.setPointSize(16);
+        font10.setBold(false);
+        font10.setItalic(false);
+        font10.setWeight(50);
+        logout_Btn_4->setFont(font10);
+        logout_Btn_4->setCursor(QCursor(Qt::PointingHandCursor));
+        logout_Btn_4->setStyleSheet(QString::fromUtf8("color: rgb(206, 36, 14);\n"
+"font: 16pt \"Gabriola\";\n"
 "border:none;\n"
 ""));
-        label_49 = new QLabel(widget_24);
-        label_49->setObjectName(QString::fromUtf8("label_49"));
-        label_49->setGeometry(QRect(730, 10, 91, 41));
-        label_49->setStyleSheet(QString::fromUtf8("font: 15pt \"Gabriola\";"));
-        label_45 = new QLabel(widget_24);
-        label_45->setObjectName(QString::fromUtf8("label_45"));
-        label_45->setGeometry(QRect(50, 90, 61, 16));
-        label_45->setStyleSheet(QString::fromUtf8("font: 8pt \"Lucida Sans\";\n"
-"background-color: none;\n"
-"color: rgb(206, 36, 14);"));
-        label_46 = new QLabel(widget_24);
-        label_46->setObjectName(QString::fromUtf8("label_46"));
-        label_46->setGeometry(QRect(50, 140, 61, 16));
-        label_46->setStyleSheet(QString::fromUtf8("font: 8pt \"Lucida Sans\";\n"
-"color: rgb(206, 36, 14);\n"
-"background-color:none;"));
-        label_50 = new QLabel(widget_24);
-        label_50->setObjectName(QString::fromUtf8("label_50"));
-        label_50->setGeometry(QRect(290, 90, 71, 16));
-        label_50->setStyleSheet(QString::fromUtf8("font: 8pt \"Lucida Sans\";\n"
-"color: rgb(206, 36, 14);\n"
-"background-color:none;"));
-        pushButton_25 = new QPushButton(widget_24);
-        pushButton_25->setObjectName(QString::fromUtf8("pushButton_25"));
-        pushButton_25->setGeometry(QRect(70, 110, 21, 31));
-        pushButton_25->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_25->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/dark Orange/home.svg);\n"
+        back_Btn_2 = new QPushButton(widget_24);
+        back_Btn_2->setObjectName(QString::fromUtf8("back_Btn_2"));
+        back_Btn_2->setGeometry(QRect(20, 10, 31, 31));
+        back_Btn_2->setCursor(QCursor(Qt::PointingHandCursor));
+        back_Btn_2->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/dark Orange/home.svg);\n"
 "border:none;\n"
 ""));
-        label_46->raise();
-        label_45->raise();
-        pushButton_25->raise();
-        pushButton_17->raise();
-        pushButton_18->raise();
-        pushButton_19->raise();
-        pushButton_20->raise();
-        pushButton_21->raise();
-        pushButton_22->raise();
-        pushButton_23->raise();
-        pushButton_24->raise();
-        label_49->raise();
-        label_50->raise();
         container->addWidget(adminPanel);
         page = new QWidget();
         page->setObjectName(QString::fromUtf8("page"));
@@ -1901,13 +1780,13 @@ public:
         pushButton = new QPushButton(frame_2);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setMinimumSize(QSize(0, 0));
-        QFont font10;
-        font10.setFamily(QString::fromUtf8("Lucida Sans"));
-        font10.setPointSize(22);
-        font10.setBold(false);
-        font10.setItalic(false);
-        font10.setWeight(50);
-        pushButton->setFont(font10);
+        QFont font11;
+        font11.setFamily(QString::fromUtf8("Lucida Sans"));
+        font11.setPointSize(22);
+        font11.setBold(false);
+        font11.setItalic(false);
+        font11.setWeight(50);
+        pushButton->setFont(font11);
         pushButton->setCursor(QCursor(Qt::PointingHandCursor));
         pushButton->setStyleSheet(QString::fromUtf8("image: url(:/res/icons/black/arrow-right-circle.svg);\n"
 "font: 22pt \"Lucida Sans\";"));
@@ -1967,7 +1846,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        container->setCurrentIndex(1);
+        container->setCurrentIndex(4);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -2052,72 +1931,70 @@ public:
         signupLabel_3->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; color:#ffffff;\">Sign up</span></p></body></html>", nullptr));
         logoBtn_3->setText(QString());
         backBtn_4->setText(QApplication::translate("MainWindow", "Back", nullptr));
-        pushButton_9->setText(QString());
-        pushButton_10->setText(QString());
-        label_18->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:28pt; font-weight:600; color:#ce240e;\">Your Parcel, Our Responsibility</span></p></body></html>", nullptr));
+        back_Btn->setText(QString());
+        home_Btn->setText(QString());
+        label_Headline->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:28pt; font-weight:600; color:#ce240e;\">Your Parcel, Our Responsibility</span></p></body></html>", nullptr));
+        myparcel_Btn_2->setText(QApplication::translate("MainWindow", "My parcel", nullptr));
+        logout_Btn_3->setText(QApplication::translate("MainWindow", "Log out", nullptr));
         label_4->setText(QString());
-        label_5->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:8pt; \">Document</span></p></body></html>", nullptr));
-        pushButton_7->setText(QString());
-        pushButton_4->setText(QString());
-        pushButton_6->setText(QString());
-        pushButton_5->setText(QString());
+        label_Document->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:8pt; \">Document</span></p></body></html>", nullptr));
+        Package->setText(QString());
+        Document->setText(QString());
+        Electronic->setText(QString());
+        Gift->setText(QString());
         label_6->setText(QString());
         label_7->setText(QString());
         label_8->setText(QString());
-        label_9->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:8pt; \">Gift</span></p></body></html>", nullptr));
-        label_10->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:8pt; \">Electronics</span></p></body></html>", nullptr));
-        label_11->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:8pt; \">Package</span></p></body></html>", nullptr));
-        label_12->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Pick up point</span></p></body></html>", nullptr));
-        label_13->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Destination</span></p></body></html>", nullptr));
-        label_14->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Name</span></p></body></html>", nullptr));
-        label_15->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Mobile</span></p></body></html>", nullptr));
-        label_16->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Address</span></p></body></html>", nullptr));
-        pushButton_8->setText(QApplication::translate("MainWindow", "Confirm", nullptr));
-        label_17->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:24pt; font-weight:600; color:#ce240e;\">Send Parcel</span></p></body></html>", nullptr));
+        label_Gift->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:8pt; \">Gift</span></p></body></html>", nullptr));
+        label_Electronics->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:8pt; \">Electronics</span></p></body></html>", nullptr));
+        label_package->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:8pt; \">Package</span></p></body></html>", nullptr));
+        label_Pick->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Pick up point</span></p></body></html>", nullptr));
+        label_Destination->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Destination</span></p></body></html>", nullptr));
+        label_Name->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Name</span></p></body></html>", nullptr));
+        label_mobile->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Mobile</span></p></body></html>", nullptr));
+        label_Address->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Address</span></p></body></html>", nullptr));
+        confirm_Btn->setText(QApplication::translate("MainWindow", "Confirm", nullptr));
+        label_Sendparcel->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:24pt; font-weight:600; color:#ce240e;\">Send Parcel</span></p></body></html>", nullptr));
         label_19->setText(QApplication::translate("MainWindow", "<html><head/><body><p>Once you clicked confirm, the action can't be undone.</p></body></html>", nullptr));
         label_20->setText(QString());
-        label_21->setText(QString());
-        label_22->setText(QString());
-        label_23->setText(QString());
-        label_25->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:8pt; \">Document</span></p></body></html>", nullptr));
+        github->setText(QString());
+        facebook->setText(QString());
+        twitter->setText(QString());
+        label_ParcelType->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:8pt; \">Document</span></p></body></html>", nullptr));
         label_32->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; text-decoration: underline;\">Delivery boy's information</span></p></body></html>", nullptr));
         label_34->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Name</span></p></body></html>", nullptr));
         label_35->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Mobile</span></p></body></html>", nullptr));
         label_36->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; text-decoration: underline;\">Total Price</span></p></body></html>", nullptr));
         label_37->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:24pt; font-weight:600; color:#ce240e;\">Parcel Ready</span></p></body></html>", nullptr));
-        label_38->setText(QString());
-        label_39->setText(QString());
-        label_40->setText(QString());
+        label_Price->setText(QString());
+        label_Name_2->setText(QString());
+        label_Mobile_2->setText(QString());
         label_41->setText(QString());
         label_42->setText(QString());
         label_24->setText(QApplication::translate("MainWindow", "<html><head/><body><p>Your parcel will be delivered within two working days. Till then, stay relax.</p></body></html>", nullptr));
-        label_26->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Thank you for choosing Bitoron</span></p></body></html>", nullptr));
-        label_28->setText(QString());
-        label_29->setText(QString());
-        label_30->setText(QString());
+        label_Thanks->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Thank you for choosing Bitoron</span></p></body></html>", nullptr));
+        github_2->setText(QString());
+        facebook_2->setText(QString());
+        twitter_2->setText(QString());
         backBtn->setText(QString());
         homeBtn->setText(QString());
         label_44->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:28pt; font-weight:600; color:#ffffff;\">Your Parcel, Our Responsibility</span></p></body></html>", nullptr));
         logoutBtn->setText(QApplication::translate("MainWindow", "Log out", nullptr));
-        pushButton_13->setText(QString());
-        pushButton_14->setText(QString());
-        pushButton_15->setText(QString());
-        label_47->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600; color:#ce240e;\">Dues</span></p></body></html>", nullptr));
-        pushButton_16->setText(QString());
-        label_48->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:15pt; font-weight:600; color:#ce240e;\">Parcel Ready</span></p></body></html>", nullptr));
-        pushButton_17->setText(QString());
-        pushButton_18->setText(QString());
-        pushButton_19->setText(QString());
-        pushButton_20->setText(QString());
-        pushButton_21->setText(QString());
-        pushButton_22->setText(QString());
-        pushButton_23->setText(QString());
-        pushButton_24->setText(QString());
-        label_49->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600; color:#ce240e;\">Log out</span></p></body></html>", nullptr));
-        label_45->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">Document</span></p></body></html>", nullptr));
-        label_46->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">Proceed</span></p></body></html>", nullptr));
-        label_50->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">Electronics</span></p></body></html>", nullptr));
-        pushButton_25->setText(QString());
+        label_51->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600; text-decoration: underline; color:#ce240e;\">Parcel Type</span></p></body></html>", nullptr));
+        label_52->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600; text-decoration: underline; color:#ce240e;\">Pick up point</span></p></body></html>", nullptr));
+        label_53->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600; text-decoration: underline; color:#ce240e;\">Assign transporter</span></p></body></html>", nullptr));
+        label_54->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600; text-decoration: underline; color:#ce240e;\">Assign price</span></p></body></html>", nullptr));
+        label_55->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600; text-decoration: underline; color:#ce240e;\">Destination</span></p></body></html>", nullptr));
+        label_Parceltype->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600; color:#ce240e;\">Dues</span></p></body></html>", nullptr));
+        label_pick->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600; color:#ce240e;\">Dues</span></p></body></html>", nullptr));
+        label_destination->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600; color:#ce240e;\">Dues</span></p></body></html>", nullptr));
+        proceed_Btn->setText(QApplication::translate("MainWindow", "Proceed", nullptr));
+        label_56->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600; text-decoration: underline; color:#ce240e;\">Total users</span></p></body></html>", nullptr));
+        label_totalusers->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600; color:#ce240e;\">Dues</span></p></body></html>", nullptr));
+        label_turnover->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600; color:#ce240e;\">Dues</span></p></body></html>", nullptr));
+        label_57->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600; text-decoration: underline; color:#ce240e;\">Total Turnover</span></p></body></html>", nullptr));
+        logout_Btn_4->setText(QApplication::translate("MainWindow", "Log out", nullptr));
+        back_Btn_2->setText(QString());
         label_2->setText(QString());
         sendParcel->setText(QApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:20pt; font-weight:600;\">Send Parcel</span></p></body></html>", nullptr));
         pushButton_2->setText(QString());

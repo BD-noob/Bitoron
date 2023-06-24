@@ -101,9 +101,14 @@ compiler_rcc_clean:
 	-$(DEL_FILE) release/qrc_bitoronImages.cpp
 release/qrc_bitoronImages.cpp: ../bitoron/bitoronImages.qrc \
 		../../../QT/installedfiles/5.12.12/mingw73_64/bin/rcc.exe \
+		../bitoron/images/pinnacle-package.png \
 		../bitoron/images/bgnavbar.jpg \
+		../bitoron/images/deliveryscooter.png \
 		../bitoron/images/bg3.jpg \
+		../bitoron/images/deliveryimg.jpg \
+		../bitoron/images/transparent.jpg \
 		../bitoron/images/bgnavbar1.jpg \
+		../bitoron/images/deliveryimageversion2.png \
 		../bitoron/icons/link.svg \
 		../bitoron/icons/phone-missed.svg \
 		../bitoron/icons/minimize-2.svg \
@@ -1246,7 +1251,20 @@ release/qrc_bitoronImages.cpp: ../bitoron/bitoronImages.qrc \
 		../bitoron/icons/white/corner-right-down.svg \
 		../bitoron/icons/white/volume-2.svg \
 		../bitoron/icons/white/sun.svg \
-		../bitoron/icons/white/radio.svg
+		../bitoron/icons/white/radio.svg \
+		../bitoron/logos/bitoron-website-favicon-color.png \
+		../bitoron/logos/bitoron-low-resolution-logo-white-on-transparent-background.png \
+		../bitoron/logos/bitoron-low-resolution-logo-white-on-black-background.png \
+		../bitoron/logos/bitoron-high-resolution-logo-white-on-black-background.png \
+		../bitoron/logos/bitoron-high-resolution-logo-white-on-transparent-background.png \
+		../bitoron/logos/bitoron-website-favicon-white.png \
+		../bitoron/logos/bitoron-low-resolution-logo-color-on-transparent-background.png \
+		../bitoron/logos/bitoron-website-favicon-black.png \
+		../bitoron/logos/bitoron-low-resolution-logo-black-on-transparent-background.png \
+		../bitoron/logos/bitoron-high-resolution-logo-color-on-transparent-background.png \
+		../bitoron/logos/bitoron-low-resolution-color-logo.png \
+		../bitoron/logos/bitoron-high-resolution-color-logo.png \
+		../bitoron/logos/bitoron-high-resolution-logo-black-on-transparent-background.png
 	'D:\QT\installedfiles\5.12.12\mingw73_64\bin\rcc.exe' -name bitoronImages ../bitoron/bitoronImages.qrc -o release/qrc_bitoronImages.cpp
 
 compiler_moc_predefs_make_all: release/moc_predefs.h
@@ -1615,7 +1633,43 @@ release/mainwindow.o: ../bitoron/mainwindow.cpp ../bitoron/mainwindow.h \
 		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtGui/qtouchdevice.h \
 		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/qtabwidget.h \
 		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtGui/qicon.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtCore/QVariant \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtGui/QIcon \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/QAction \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/qaction.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/qactiongroup.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/QApplication \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/qapplication.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtCore/qcoreapplication.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtCore/qeventloop.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/qdesktopwidget.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtGui/qguiapplication.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtGui/qinputmethod.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/QFrame \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/qframe.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/QHBoxLayout \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/qboxlayout.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/qlayout.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/qlayoutitem.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/qgridlayout.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/QLabel \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/qlabel.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/QLineEdit \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/qlineedit.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtGui/qtextcursor.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtGui/qtextformat.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtGui/qpen.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtGui/qtextoption.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/QPushButton \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/qpushbutton.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/qabstractbutton.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/QRadioButton \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/qradiobutton.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/QStackedWidget \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/qstackedwidget.h \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/QVBoxLayout \
+		../../../QT/installedfiles/5.12.12/mingw73_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/mainwindow.o ../bitoron/mainwindow.cpp
 
 release/qrc_bitoronImages.o: release/qrc_bitoronImages.cpp 
